@@ -33,7 +33,7 @@ body{
 
 #totop{
     position: fixed;
-    right: 27px;
+    right: 21px;
     bottom: 50px;
     width: 70px;
     cursor: pointer;
@@ -127,15 +127,15 @@ main{
 }
 
 .line1{
-    border-top: 2px solid #232420;
-    padding-left: 53%;
+    border-top: 1px solid #232420;
+    padding-left: 50%;
     position: absolute;
     top: 54%;
     left: 12%
 }
 
 .line2{
-    border-right: 2px solid #232420;
+    border-right: 1px solid #232420;
     height: 55%;
     position: absolute;
     right: 4%;
@@ -176,7 +176,7 @@ main h2:last-child{
     position: absolute;
     font-size: 2em;
     z-index: -1;
-    top: 54%;
+    top: 62%;
     left: 10%;
     width: 20%;
     animation: blinkingText 1s infinite 5s;
@@ -191,7 +191,7 @@ main h2:last-child{
 .social{
     writing-mode: vertical-lr;
     position: absolute;
-    right: 35px;
+    right: 30px;
     bottom: 15%;
     font-size: 1.5em;
     position: fixed;
@@ -313,7 +313,7 @@ main h2:last-child{
 .contacttitle{
     text-align: center;
     font-size: 2.5em;
-    width: 75%;
+    width: 83%;
     margin: auto;
 }
 
@@ -420,7 +420,7 @@ main h2:last-child{
     border-right: 21px solid transparent;
     border-bottom: 45px solid #A4957D;
     transform: rotate(-59deg);
-    right: 97.5%;
+    right: 97%;
     top: 2px;
 }
 
@@ -439,7 +439,7 @@ main h2:last-child{
     height: 20px;
     border-radius: 50%;
     top: 42px;
-    left: 4%
+    left: 4.5%
 }
 
 .irisone{
@@ -447,7 +447,7 @@ main h2:last-child{
     height: 20px;
     background-color: black;
     border-radius: 50%;
-    left: 5%;
+    left: 5.5%;
     top: 40px;
     z-index: 9;    
 }
