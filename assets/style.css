@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+/* colors: text: #232420 */
+/* #8BC5D7 #DACDFB*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.darkmode{
+    background-color: black;
+    transition: all 1s;
+}
+
+.lightmode{
+    background-color: white;
+    transition: all 1s;
+}
+
+h1,h2,h3{
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    color: #232420;
+    font-family:'Source Code Pro', monospace; 
+    position: relative;
+}
+
+#totop{
+    position: fixed;
+    right: 27px;
+    bottom: 50px;
+    width: 70px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.5s;
+}
+
+@keyframes toTop{
+    from {width: 7px;}
+    to {width: 80px;}
+}
+
+
+
+/* MAIN */
+
+main button{
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.10); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.10);
+}
+
+main .button1{
+    position: absolute;
+    background: linear-gradient(to right, #8BC5D7, #DACDFB); 
+    padding: 15px 80px;
+    z-index: 1;
+    transition: all 0.5s;
+    
+}
+
+main .button2{
+    position: absolute;
+    padding: 15px 50px;
+    
+}
+
+.button1:hover{
+    padding-right: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #232420;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 19px;
+}
+
+nav a{
+    color:#348082 ;
+    transition: all 1s;
+    font-size: 1.5em;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #348082;
+}
+
+nav div h3{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: lighter;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-left: 60%;
+}
+
+ul li{
+    padding-right: 40px;
+}
+
+main{
+    display: flex;
+}
+
+.line1{
+    border-top: 2px solid #232420;
+    padding-left: 53%;
+    position: absolute;
+    top: 54%;
+    left: 12%
+}
+
+.line2{
+    border-right: 2px solid #232420;
+    height: 55%;
+    position: absolute;
+    right: 4%;
+    top: 12%;
+}
+
+#mecircle{
+    width: 30%;
+    border-radius: 50%;
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20);
+}
+
+main div{
+    position: relative;
+    margin-top: 13%;
+    margin-left: 20%;
+}
+
+main div h1{
+    font-size: 5em;
+    width: 119%;
+}
+
+main img{
+    width: 30%;
+    object-fit: contain;
+    margin-left: 11%;
+    margin-top: 8%;
+}
+
+main h2:last-child{
+    position: relative;
+}
+
+
+#arrow{
+    position: absolute;
+    font-size: 2em;
+    z-index: -1;
+    top: 54%;
+    left: 10%;
+    width: 20%;
+    animation: blinkingText 1s infinite 5s;
+    box-shadow: none;
+}
+
+@keyframes blinkingText{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.social{
+    writing-mode: vertical-lr;
+    position: absolute;
+    right: 35px;
+    bottom: 15%;
+    font-size: 1.5em;
+    position: fixed;
+    z-index: 999;
+    transform: rotate(90deg);
+}
+
+.linkedin{
+    margin-bottom: 39px;
+}
+
+
+
+/* ABOUT ME */
+
+#aboutmesection{
+    scroll-behavior: smooth;
+    display: flex;
+    background: linear-gradient(to bottom,  #fdeec4, #DACDFB );
+    margin: 5%;
+    border-radius: 5%;
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
+}
+
+#aboutmesection img{
+    object-fit: contain;
+}
+#aboutmesection div{
+    padding: 5%;
+    font-size: 1.5em;
+}
+
+#aboutmesection h1{
+    margin-bottom: 20%;
+    font-size: 4em;
+}
+
+#aboutmetitle{
+    height: 40px;
+}
+
+/* WHAT I KNOW */
+
+#whatiknow{
+    padding-bottom: 10%;
+    margin: 5%;
+    border-radius: 5%
+}
+
+#whatiknow h1{
+    text-align: center;
+    font-size: 5em;
+    padding-top: 10%;
+    height: 100px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+.skills li:first-of-type{
+    margin-top: 5%;
+}
+
+.skills div:last-of-type li:first-of-type{
+    margin-top: 3%;
+}
+
+/* MY PROJECTS */
+
+
+#protitle{
+    font-size: 5em;
+    text-align: center;
+    height: 100px;
+}
+
+#propics{
+    margin: 5%;
+    text-align: center;
+    
+}
+
+#propics img{
+    width: 80%;
+    margin: 5%;
+    transition: all 0.5s;
+}
+
+#propics img:hover{
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
+}
+
+#mypro{
+    padding: 6% 10% 0 10%;
+    background: linear-gradient(to bottom,  #FBEAEE, #E3D4FB );
+    margin: 5%;
+    border-radius: 55px;
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
+    padding-bottom: 10%;
+}
+
+
+/* CONTACT */
+
+#contact{
+    padding: 5% 0;
+    position: relative;
+    margin: 5%;
+    border-radius: 5%;
+}
+
+.contacttitle{
+    text-align: center;
+    font-size: 2.5em;
+    width: 75%;
+    margin: auto;
+}
+
+#contacttext{
+    text-align: center;
+    margin-top: 2%;
+    height: 50px;
+}
+
+
+ #contact p{
+     font-size: 1.5em;
+ }
+
+ #contact form{
+     text-align: center;
+     margin-top: 3%;
+ }
+
+ #contact form textarea{
+    font-family: 'Source Code Pro', monospace;
+    font-size: larger;
+ }
+ 
+  #send{
+      background: linear-gradient(to right, #8BC5D7, #DACDFB);
+      width: 200px;
+      height: 50px;
+      margin-top: 40px;
+      font-family: 'Source Code Pro', monospace;
+      transition: all 250ms;
+      font-size: 20px;
+      border-radius: 10px;
+      transition: all 0.5s;
+  }
+
+  #send:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20); 
+    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20);
+  }
+
+  .go{
+    animation: move 1s forwards ease-in-out;
+  }
+
+  #plane{
+    width: 3%;
+    position: absolute;
+    right: 44%;
+    bottom: 9%;
+    outline: none;
+    offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
+}
+
+@keyframes move{
+  0% {
+      transform: scale(1);
+      offset-distance: 0%;
+  }
+  100% {
+      transform: scale(0);
+      offset-distance: 100%;
+  }
+}
+
+/* CAT */
+
+
+
+#cat div{
+    position: absolute;
+    position: fixed;
+}
+
+
+
+.head{
+    border: 1px solid black;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+    left: 1%;
+    top: 13px;
+}
+
+.earone{
+    width: 0;
+    height: 0;
+    border-left: 21px solid transparent;
+    border-right: 32px solid transparent;
+    border-bottom: 39px solid #A4957D;
+    left: 5%;
+    transform: rotate(54deg);
+    top: 5px;
+}
+
+.eartwo{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 45px solid #A4957D;
+    transform: rotate(-59deg);
+    right: 97.5%;
+    top: 2px;
+}
+
+.eyeone{
+    background-color: white;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    left: 1.5%;
+    top: 42px;
+}
+
+.eyetwo{
+    background-color: white;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    top: 42px;
+    left: 4%
+}
+
+.irisone{
+    width: 4px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 5%;
+    top: 40px;
+    z-index: 9;    
+}
+
+.iristwo{
+    width: 4px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 2.6%;
+    top: 40px;
+   
+}
+
+.mouth{
+    width: 50px;
+    height: 10px;
+    border-radius: 90%;
+    border: 3px solid white;
+    top: 72px;
+    left: 2.25%;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+}
+
+.tounge{
+    width: 20px;
+    height: 0px;
+    opacity: 0;
+    border: 1px solid black;
+    top: 79px;
+    left: 2.65%;
+    background-color: orangered;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(7deg);
+    transition: height 300ms;
+}
+
+#cat:hover .tounge{
+    height: 15px;
+    opacity: 1;
+}
+
+#cat:hover{
+    cursor: pointer;
+}
+
+.hairone{
+    width: 45px;
+    border: 1px solid black;
+    top: 58px;
+    left: -1%;
+    transform: rotate(20deg);
+}
+
+.hairtwo{
+    width: 45px;
+    border: 1px solid black;
+    top: 67px;
+    left: 0;
+}
+
+.hairthree{
+    width: 29px;
+    border: 1px solid black;
+    top: 75px;
+    left: 0;
+    transform: rotate(-30deg);
+}
+
+.hairfour{
+    width: 30px;
+    border: 1px solid black;
+    top: 55px;
+    left: 6%;
+    transform: rotate(-20deg);
+}
+
+.hairfive{
+    width: 30px;
+    border: 1px solid black;
+    top: 63px;
+    left: 6%;
+}
+
+.hairsix{
+    width: 30px;
+    border: 1px solid black;
+    top: 71px;
+    left: 6%;
+    transform: rotate(21deg);
+}
+
+#clickcat{
+   position: absolute;
+   margin-top: 6%;
+   position: fixed;
+}

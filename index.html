@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="darkmode">
+
+
+    <!-- MAIN -->
+    <section class="hero">
+        <nav>
+            <div>
+                <section onclick="darkMode()" id="cat">
+                    <div class="earone"></div>
+                    <div class="eartwo"></div>
+                    <div class="head"></div>
+                    <div class="eyeone"></div>
+                    <div class="irisone"></div>
+                    <div class="eyetwo"></div>
+                    <div class="iristwo"></div>
+                    <div class="mouth"></div>
+                    <div class="tounge"></div>
+                    <div class="hairone"></div>
+                    <div class="hairtwo"></div>
+                    <div class="hairthree"></div>
+                    <div class="hairfour"></div>
+                    <div class="hairfive"></div>
+                    <div class="hairsix"></div>
+                </section>
+            </div>
+            <p id="clickcat">lightmode</p>
+
+            <div class="line1"></div>
+
+            <img id="totop" src="./assets/img/totop.png" alt="">
+            <ul id="nav">
+                <li><a href="#aboutmesection">About me</a></li>
+                <li><a href="#mypro">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="line2"></div>
+
+        <main>
+            <div>
+                <h1 id="hey">
+                    Hey! <br> I´m Severin. <br>
+                    <h2 id="typewrite"></h2>
+                    <img id="arrow" src="./assets/img/arrowdown.png" alt="">
+                </h1>
+
+                <button class="button1"><a href="#aboutmesection">About</a></button>
+                <button class="button2"><a href="#aboutmesection">About.. me</a></button>
+            </div>
+            <img id="mecircle" src="./assets/img/mecircle.png" alt="">
+
+            <div class="social">
+                <a href="https://linkedin.com/in/severin-stephan/" target="_blank"><img src="./assets/img/linkedin.png"
+                        class="linkedin"></a>
+
+                <a href=https://github.com/SeverinStephan" target="_blank"><img src="./assets/img/github.png"
+                        class="github" href=></a>
+            </div>
+
+        </main>
+
+    </section>
+
+    <!-- ABOUT ME -->
+
+    <section onmouseover="loop2()" id="aboutmesection">
+        <div class="aboutimage">
+            <img src="./assets/img/aboutme.jpeg" alt="">
+        </div>
+        <div>
+            <h1 id="aboutmetitle"></h1>
+            <p class="abouttext">
+                I love the magic that happens while writing some code. All these letters, numbers and signs seems to be
+                a chaotic system but in the end they work all together and create a wonderful looking website. <br>
+                In 2018 i deepdived into the system for the first time and forgot the world around me.
+                Since then i knew, that is going to be something i wanna do for living. <br>
+                So i grabbed the chance in 2021, where the pandemic stole my job in the event industry and
+                did a 6 month course as a web developer, which i finished in August same year. <br>
+                Living in berlin, always keen for traveling i´m lucky to help people getting their ideas into the
+                worldwideweb.
+            </p>
+
+    </section>
+
+    <section onmouseover="loop4()" id="whatiknow">
+        <div>
+            <h1 id="whatiknowtitle"></h1>
+        </div>
+
+        <div class="skills">
+            <div>
+                <h2>Creating</h2>
+                <li>HTML</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>NEXT.JS</li>
+                <li>NODE.JS</li>
+                <li>EXPRESS.JS</li>
+                <li>MONGO DB</li>
+            </div>
+
+            <div>
+                <h2>Styling</h2>
+                <li>Responsive Design</li>
+                <li>CSS/SASS</li>
+                <li>Canva</li>
+                <li>Figma</li>
+            </div>
+
+            <div>
+                <h2>CMS</h2>
+                <li>WIX</li>
+                <li>SHOPIFY + Oberlo</li>
+                <li>WORDPRESS</li>
+            </div>
+
+            <div>
+                <h2>What else</h2>
+                <li>SEO</li>
+                <li>Social Media Ads</li>
+                <li>Willing to learn new stuff</li>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MY PROJECTS -->
+
+    <section onmouseover="loop3()" id="mypro">
+        <div>
+            <h1 id="protitle"></h1>
+        </div>
+        <div id="propics">
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" onmouseover="loop5()">
+        <div class="contacttitle">
+            <h1>
+                I take on freelance opportunities to help you out with your private or business project
+            </h1>
+        </div>
+        <div>
+            <p id="contacttext">
+            </p>
+        </div>
+        <form action="" method="POST">
+            <textarea cols="39" rows="2" type="text" placeholder="Your name" onclick="this.value=' '"></textarea>
+            <textarea cols="39" rows="2" type="email" placeholder="Your email" onclick="this.value=' '"></textarea> <br>
+            <textarea cols="81" rows="9" type="text" placeholder="Your message" onclick="this.value=' '"></textarea>
+            <br>
+            <input type="button" name="send" id="send" value="Send" onclick="flyAway()">
+        </form>
+        <img id="plane" src="./assets/img/newplane.png" alt="">
+
+
+    </section>
+
+
+
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
