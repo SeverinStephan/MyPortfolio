@@ -12,7 +12,8 @@ font-family: 'Source Code Pro', monospace; */
 }
 
 .darkmode{
-    background-color: black;
+    background-color: #232420;
+    color: white;
     transition: all 1s;
 }
 
@@ -32,13 +33,13 @@ body{
 }
 
 #totop{
-    position: fixed;
-    right: 21px;
-    bottom: 50px;
-    width: 70px;
+    min-width: 40px; 
     cursor: pointer;
     z-index: 9999;
-    transition: all 0.5s;
+}
+
+a{
+    text-decoration: none;
 }
 
 @keyframes toTop{
@@ -50,57 +51,19 @@ body{
 
 /* MAIN */
 
-main button{
-    font-family: 'Source Code Pro', monospace;
-    margin-top: 40px;
-    border-radius: 5px;
-    border: none;
-    font-size: 20px;
-    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.10); 
-    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.10);
-}
-
-main .button1{
-    position: absolute;
-    background: linear-gradient(to right, #8BC5D7, #DACDFB); 
-    padding: 15px 80px;
-    z-index: 1;
-    transition: all 0.5s;
-    
-}
-
-main .button2{
-    position: absolute;
-    padding: 15px 50px;
-    
-}
-
-.button1:hover{
-    padding-right: 0px;
-}
-
-a{
-    text-decoration: none;
-    color: #232420;
-}
-
 .hero {
-    height: 100vh;
+    min-height: 60vh;
     position: relative;
 }
 
 nav {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 19px;
 }
 
 nav a{
     color:#348082 ;
     transition: all 1s;
-    font-size: 1.5em;
+    font-size: 0.9em;
 }
 
 nav a:hover{
@@ -115,70 +78,26 @@ nav div h3{
 ul{
     list-style: none;
     display: flex;
-    margin-left: 60%;
+    justify-content: center;
 }
 
 ul li{
-    padding-right: 40px;
+    padding: 5%;
 }
 
 main{
-    display: flex;
-}
-
-.line1{
-    border-top: 1px solid #232420;
-    padding-left: 50%;
-    position: absolute;
-    top: 54%;
-    left: 12%
-}
-
-.line2{
-    border-right: 1px solid #232420;
-    height: 55%;
-    position: absolute;
-    right: 4%;
-    top: 12%;
-}
-
-#mecircle{
-    width: 30%;
-    border-radius: 50%;
-    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20); 
-    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20);
-}
-
-main div{
-    position: relative;
-    margin-top: 13%;
-    margin-left: 20%;
+    margin-top: 12%;
+    text-align: center;
 }
 
 main div h1{
-    font-size: 5em;
-    width: 119%;
+    font-size: 3em;
 }
-
-main img{
-    width: 30%;
-    object-fit: contain;
-    margin-left: 11%;
-    margin-top: 8%;
-}
-
-main h2:last-child{
-    position: relative;
-}
-
 
 #arrow{
-    position: absolute;
     font-size: 2em;
     z-index: -1;
-    top: 62%;
-    left: 10%;
-    width: 20%;
+    max-width: 20%;
     animation: blinkingText 1s infinite 5s;
     box-shadow: none;
 }
@@ -190,164 +109,159 @@ main h2:last-child{
 
 .social{
     writing-mode: vertical-lr;
-    position: absolute;
-    right: 30px;
-    bottom: 15%;
-    font-size: 1.5em;
+    right: 0;
+    bottom: 9%;
     position: fixed;
     z-index: 999;
-    transform: rotate(90deg);
 }
 
-.linkedin{
-    margin-bottom: 39px;
+.social img{
+    width: 30px;
 }
-
-
 
 /* ABOUT ME */
 
 #aboutmesection{
     scroll-behavior: smooth;
-    display: flex;
-    background: linear-gradient(to bottom,  #fdeec4, #DACDFB );
-    margin: 5%;
-    border-radius: 5%;
-    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
-    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
 }
 
-#aboutmesection img{
-    object-fit: contain;
+.aboutcontent{
+    padding: 7%;
 }
-#aboutmesection div{
-    padding: 5%;
-    font-size: 1.5em;
-}
-
-#aboutmesection h1{
-    margin-bottom: 20%;
-    font-size: 4em;
-}
-
 #aboutmetitle{
-    height: 40px;
+   height: 40px;
+   font-size: 2.5em;
+   text-align: center;
+   margin-bottom: 16%;
 }
 
+.abouttext{
+    font-size:0.9em;
+}
+
+.aboutimage{
+    text-align: center;
+}
+
+.mypic{
+    max-width: 15em;
+    margin-bottom: 9%;
+}
 /* WHAT I KNOW */
 
 #whatiknow{
     padding-bottom: 10%;
-    margin: 5%;
-    border-radius: 5%
 }
 
 #whatiknow h1{
     text-align: center;
-    font-size: 5em;
+    font-size: 2.5em;
     padding-top: 10%;
     height: 100px;
 }
 
 .skills{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 15%;
+    font-size: 1em;
+    padding: 10%;
 }
 
-.skills li:first-of-type{
-    margin-top: 5%;
+.skills div li{
+    list-style: none;
+    text-align: center;
 }
 
-.skills div:last-of-type li:first-of-type{
-    margin-top: 3%;
+.skills div h2{
+    margin: 5%;
+    text-align: center;
 }
-
 /* MY PROJECTS */
 
 
 #protitle{
-    font-size: 5em;
+    font-size: 2.5em;
     text-align: center;
     height: 100px;
+    margin: 10%;
 }
 
 #propics{
-    margin: 5%;
     text-align: center;
-    
 }
 
 #propics img{
-    width: 80%;
-    margin: 5%;
-    transition: all 0.5s;
-}
-
-#propics img:hover{
-    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
-    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
+    max-width: 300px;
+    margin-bottom: 10%;
 }
 
 #mypro{
-    padding: 6% 10% 0 10%;
-    background: linear-gradient(to bottom,  #FBEAEE, #E3D4FB );
-    margin: 5%;
     border-radius: 55px;
-    -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33); 
-    box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.33);
-    padding-bottom: 10%;
 }
 
 
 /* CONTACT */
 
 #contact{
-    padding: 5% 0;
     position: relative;
     margin: 5%;
     border-radius: 5%;
+    text-align: center;
 }
 
 .contacttitle{
-    text-align: center;
-    font-size: 2.5em;
-    width: 83%;
-    margin: auto;
+    font-size: 1em;
+    margin-bottom: 9%;
 }
 
 #contacttext{
-    text-align: center;
     margin-top: 2%;
-    height: 50px;
+    min-height: 50px;
 }
 
 
  #contact p{
-     font-size: 1.5em;
+     font-size: 0.9em;
  }
 
  #contact form{
      text-align: center;
      margin-top: 3%;
+     width: 100%;
  }
 
  #contact form textarea{
     font-family: 'Source Code Pro', monospace;
-    font-size: larger;
  }
- 
+
+ #contact form textarea:first-of-type{
+     min-width: 90vw;
+     min-height: 5vh;
+ }
+
+ #contact form textarea:nth-last-of-type(2){
+    min-width: 90vw;
+    min-height: 5vh;
+}
+
+#contact form textarea:last-of-type{
+    min-width: 90vw;
+    height: 30vh;
+}
+
+textarea::placeholder{
+    text-align: center;
+    padding-top: 10px;
+}
+
   #send{
-      background: linear-gradient(to right, #8BC5D7, #DACDFB);
-      width: 200px;
-      height: 50px;
-      margin-top: 40px;
-      font-family: 'Source Code Pro', monospace;
-      transition: all 250ms;
-      font-size: 20px;
-      border-radius: 10px;
-      transition: all 0.5s;
+    background: linear-gradient(to right, #8BC5D7, #DACDFB);
+    min-width: 130px;
+    min-height: 40px;
+    margin-top: 16px;
+    font-family: 'Source Code Pro', monospace;
+    transition: all 250ms;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
   }
 
   #send:hover{
@@ -362,10 +276,11 @@ main h2:last-child{
   }
 
   #plane{
-    width: 3%;
+    max-width: 13%;
     position: absolute;
-    right: 44%;
-    bottom: 9%;
+    position:inherit;
+    right: 90px;
+    bottom: 31px;
     outline: none;
     offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
 }
@@ -381,8 +296,29 @@ main h2:last-child{
   }
 }
 
-/* CAT */
+/* DARKMODE */
+#cat{
+    position: fixed;
+    top: 4%;
+    left: 1%;
+}
 
+#sun{
+    max-width: 130%;
+    position: absolute;
+    bottom: 30%;
+    left: -11px;
+    transition: all 1s;
+}
+
+#moon{
+    max-width: 60%;
+    position: absolute;
+    bottom: -5%;
+    left: 2px;
+    opacity: 0;
+    transition: all 1s;
+}
 
 
 #cat div{
@@ -390,161 +326,138 @@ main h2:last-child{
     position: fixed;
 }
 
-
-
-.head{
-    border: 1px solid black;
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background-color: black;
-    left: 1%;
-    top: 13px;
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
 
-.earone{
-    width: 0;
-    height: 0;
-    border-left: 21px solid transparent;
-    border-right: 32px solid transparent;
-    border-bottom: 39px solid #A4957D;
-    left: 5%;
-    transform: rotate(54deg);
-    top: 5px;
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	min-width: 35px;
+	min-height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
 }
 
-.eartwo{
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 21px solid transparent;
-    border-bottom: 45px solid #A4957D;
-    transform: rotate(-59deg);
-    right: 97%;
-    top: 2px;
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	min-width: 10px;
+	min-height: 10px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
 }
 
-.eyeone{
-    background-color: white;
-    width: 30px;
-    height: 20px;
-    border-radius: 50%;
-    left: 1.5%;
-    top: 42px;
+input:checked + label {
+	background: #506080;
 }
 
-.eyetwo{
-    background-color: white;
-    width: 30px;
-    height: 20px;
-    border-radius: 50%;
-    top: 42px;
-    left: 4.5%
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
 }
 
-.irisone{
-    width: 4px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    left: 5.5%;
-    top: 40px;
-    z-index: 9;    
+label:active:after {
+	min-width: 40px;
 }
 
-.iristwo{
-    width: 4px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    left: 2.6%;
-    top: 40px;
-   
+/* MEDIA QUERY */
+
+@media screen and (min-width:1024px ){
+    main div h1{
+        font-size: 4em;
+    }
+
+    #plane{
+        width: 5%;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    #contact p{
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    #protitle{
+        font-size: 3.5em;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    #aboutmetitle{
+        font-size: 3.5em;
+        margin-bottom: 8%;
+    }
+
+    #whatiknow h1{
+        font-size: 3.5em;
+    }
+
+    .mypic{
+        margin-top:9%
+    }
+
+    #whatiknow{
+        padding-bottom: 0;
+    }
 }
 
-.mouth{
-    width: 50px;
-    height: 10px;
-    border-radius: 90%;
-    border: 3px solid white;
-    top: 72px;
-    left: 2.25%;
-    border-top-color: black;
-    border-left-color: black;
-    border-right-color: black;
-}
 
-.tounge{
-    width: 20px;
-    height: 0px;
-    opacity: 0;
-    border: 1px solid black;
-    top: 79px;
-    left: 2.65%;
-    background-color: orangered;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    transform: rotate(7deg);
-    transition: height 300ms;
-}
+@media screen and (min-width:1440px ){
 
-#cat:hover .tounge{
-    height: 15px;
-    opacity: 1;
-}
+        nav ul li{
+            font-size: 2em;
+        }
 
-#cat:hover{
-    cursor: pointer;
-}
+        main div h1{
+            font-size: 6em;
+        }
 
-.hairone{
-    width: 45px;
-    border: 1px solid black;
-    top: 58px;
-    left: -1%;
-    transform: rotate(20deg);
-}
+        .mypic{
+            max-width: 25em;
+        }
 
-.hairtwo{
-    width: 45px;
-    border: 1px solid black;
-    top: 67px;
-    left: 0;
-}
+        #aboutmetitle{
+            font-size: 5.5em;
+            margin-bottom: 15%;
+        }
 
-.hairthree{
-    width: 29px;
-    border: 1px solid black;
-    top: 75px;
-    left: 0;
-    transform: rotate(-30deg);
-}
+        .abouttext{
+            font-size: 1.9em;
+        }
 
-.hairfour{
-    width: 30px;
-    border: 1px solid black;
-    top: 55px;
-    left: 6%;
-    transform: rotate(-20deg);
-}
+        #whatiknow h1{
+            font-size: 6em;
+        }
 
-.hairfive{
-    width: 30px;
-    border: 1px solid black;
-    top: 63px;
-    left: 6%;
-}
+        .skills{
+            font-size: 2em;
+        }
 
-.hairsix{
-    width: 30px;
-    border: 1px solid black;
-    top: 71px;
-    left: 6%;
-    transform: rotate(21deg);
-}
+        #protitle {
+            font-size: 5.5em;
+            margin-bottom: 8%;
+        }
 
-#clickcat{
-   position: absolute;
-   margin-top: 6%;
-   position: fixed;
+        .contacttitle h1{
+            font-size: 3.5em;
+        }
+
+        #contact p{
+            font-size: 2em;
+        }
+
+        #totop{
+            bottom: 26px;
+        }
 }

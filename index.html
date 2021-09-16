@@ -16,51 +16,26 @@
     <!-- MAIN -->
     <section class="hero">
         <nav>
-            <div>
-                <section onclick="darkMode()" id="cat">
-                    <div class="earone"></div>
-                    <div class="eartwo"></div>
-                    <div class="head"></div>
-                    <div class="eyeone"></div>
-                    <div class="irisone"></div>
-                    <div class="eyetwo"></div>
-                    <div class="iristwo"></div>
-                    <div class="mouth"></div>
-                    <div class="tounge"></div>
-                    <div class="hairone"></div>
-                    <div class="hairtwo"></div>
-                    <div class="hairthree"></div>
-                    <div class="hairfour"></div>
-                    <div class="hairfive"></div>
-                    <div class="hairsix"></div>
-                </section>
-            </div>
-            <p id="clickcat">lightmode</p>
-
-            <div class="line1"></div>
-
-            <img id="totop" src="./assets/img/totop.png" alt="">
             <ul id="nav">
-                <li><a href="#aboutmesection">About me</a></li>
+                <section id="cat">
+                    <img id="sun" src="./assets/img/sonne.png" alt="">
+                    <img id="moon" src="./assets/img/moon.png" alt="">
+                    <input onclick="darkMode()" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                </section>
+                <li><a href="#aboutmesection">About</a></li>
                 <li><a href="#mypro">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="line2"></div>
-
         <main>
-            <div>
-                <h1 id="hey">
+            <div class="maincontent">
+                <h1>
                     Hey! <br> I´m Severin. <br>
-                    <h2 id="typewrite"></h2>
-                    <img id="arrow" src="./assets/img/arrowdown.png" alt="">
                 </h1>
-
-                <button class="button1"><a href="#aboutmesection">About</a></button>
-                <button class="button2"><a href="#aboutmesection">About.. me</a></button>
+                <h2 id="typewrite"></h2>
+                <img id="arrow" src="./assets/img/arrowdown.png" alt="">
             </div>
-            <img id="mecircle" src="./assets/img/mecircle.png" alt="">
 
             <div class="social">
                 <a href="https://linkedin.com/in/severin-stephan/" target="_blank"><img src="./assets/img/linkedin.png"
@@ -68,6 +43,8 @@
 
                 <a href=https://github.com/SeverinStephan" target="_blank"><img src="./assets/img/github.png"
                         class="github" href=></a>
+
+                <img id="totop" src="./assets/img/totop.png" alt="">
             </div>
 
         </main>
@@ -78,21 +55,23 @@
 
     <section onmouseover="loop2()" id="aboutmesection">
         <div class="aboutimage">
-            <img src="./assets/img/aboutme.jpeg" alt="">
+            <img class="mypic" src="./assets/img/mecircle.png" alt="">
         </div>
-        <div>
+        <div class="aboutcontent">
             <h1 id="aboutmetitle"></h1>
             <p class="abouttext">
-                I love the magic that happens while writing some code. All these letters, numbers and signs seems to be
-                a chaotic system but in the end they work all together and create a wonderful looking website. <br>
-                In 2018 i deepdived into the system for the first time and forgot the world around me.
-                Since then i knew, that is going to be something i wanna do for living. <br>
-                So i grabbed the chance in 2021, where the pandemic stole my job in the event industry and
-                did a 6 month course as a web developer, which i finished in August same year. <br>
-                Living in berlin, always keen for traveling i´m lucky to help people getting their ideas into the
+                <b>I love the magic</b> that happens while writing some code. <br> All these letters, numbers and signs
+                seems
+                to be
+                a chaotic system but in the end they work all together and create a wonderful looking website.<br> <br>
+                <b>In 2018 I deepdived</b> into the system for the first time and forgot the world around me.
+                Since then I knew, that is going to be something I wanna do for living. <br> <br>
+                <b> So I grabbed the chance</b> in 2021, where the pandemic stole my job in the event industry and
+                did a 6 month course as a web developer, which I finished in August in the same year. <br>
+                Living in Berlin, always keen for traveling I'm lucky to help people getting their ideas into the
                 worldwideweb.
             </p>
-
+        </div>
     </section>
 
     <section onmouseover="loop4()" id="whatiknow">
@@ -109,7 +88,7 @@
                 <li>NEXT.JS</li>
                 <li>NODE.JS</li>
                 <li>EXPRESS.JS</li>
-                <li>MONGO DB</li>
+                <li>EJS</li>
             </div>
 
             <div>
@@ -160,10 +139,11 @@
             <p id="contacttext">
             </p>
         </div>
+        <img id="arrow" src="./assets/img/arrowdown.png" alt="">
         <form action="" method="POST">
-            <textarea cols="39" rows="2" type="text" placeholder="Your name" onclick="this.value=' '"></textarea>
-            <textarea cols="39" rows="2" type="email" placeholder="Your email" onclick="this.value=' '"></textarea> <br>
-            <textarea cols="80" rows="9" type="text" placeholder="Your message" onclick="this.value=' '"></textarea>
+            <textarea type="text" placeholder="Your name" onclick="this.value=' '"></textarea>
+            <textarea type="email" placeholder="Your email" onclick="this.value=' '"></textarea> <br>
+            <textarea type="text" placeholder="Your message" onclick="this.value=' '"></textarea>
             <br>
             <input type="button" name="send" id="send" value="Send" onclick="flyAway()">
         </form>

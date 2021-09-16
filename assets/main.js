@@ -63,7 +63,7 @@ function loop2() {
 
 
 const knowTitle = document.getElementById("whatiknowtitle")
-const textKnow = ["What i know about:"]
+const textKnow = ["My Skills:"]
 
 let k = 0
 let l = 0
@@ -238,6 +238,8 @@ let myPro = document.getElementById("mypro")
 let myButton1 = document.querySelector(".button1")
 let hey = document.getElementById("hey")
 let clickcat = document.getElementById("clickcat")
+let sun = document.getElementById("sun")
+let moon = document.getElementById("moon")
 let isOn = true
 
 function darkMode() {
@@ -245,51 +247,18 @@ function darkMode() {
     isOn = isOn ? false : true;
     if (isOn === false) {
         body.classList.add("darkmode")
-        hero.style.color = "#E1E1E1"
-        toTop.style.backgroundColor = "#E1E1E1"
-        toTop.style.borderRadius = "50%"
-        whatIknow.style.color = "#E1E1E1"
-        whatIknow.style.backgroundColor = "#1E1E1E"
-        linkedIn.style.backgroundColor = "#E1E1E1"
-        linkedIn.style.borderRadius = "20%"
-        gitHub.style.backgroundColor = "#E1E1E1"
-        gitHub.style.borderRadius = "20%"
-        contact.style.color = "#E1E1E1"
-        plane.style.color = "white%"
-        meCircle.style.opacity = "0.7"
-        sendButton.style.background = "#F8C491"
-        myButton1.style.background = "#F8C491"
-        contact.style.backgroundColor = "#1E1E1E"
-        aboutMe.style.background = "#1E1E1E"
-        aboutMe.style.color = "#E1E1E1"
-        myPro.style.background = "#1E1E1E"
-        myPro.style.color = "#E1E1E1"
-        hey.style.color = "#E1E1E1"
-        clickcat.innerHTML = "darkmode"
+        sun.style.opacity = "0"
+        moon.style.opacity = "1"
+        moon.style.bottom = "69%"
+        sun.style.bottom = "-45%"
+
     } else {
         body.classList.remove("darkmode")
         body.style.transition = "all 1s"
-        hero.style.color = ""
-        toTop.style.backgroundColor = ""
-        toTop.style.borderRadius = ""
-        whatIknow.style.color = ""
-        whatIknow.style.backgroundColor = ""
-        linkedIn.style.backgroundColor = ""
-        linkedIn.style.borderRadius = ""
-        gitHub.style.backgroundColor = ""
-        gitHub.style.borderRadius = ""
-        contact.style.color = ""
-        plane.style.color = ""
-        meCircle.style.opacity = ""
-        sendButton.style.backgroundColor = ""
-        myButton1.style.background = ""
-        contact.style.backgroundColor = ""
-        aboutMe.style.background = ""
-        aboutMe.style.color = ""
-        myPro.style.background = ""
-        myPro.style.color = ""
-        hey.style.color = ""
-        clickcat.innerHTML = "lightmode"
+        sun.style.bottom = "40%"
+        moon.style.bottom = "-5%"
+        sun.style.opacity = "1"
+        moon.style.opacity = "0"
     }
 
 }
