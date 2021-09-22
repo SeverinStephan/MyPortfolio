@@ -17,11 +17,6 @@ font-family: 'Source Code Pro', monospace; */
     transition: all 1s;
 }
 
-.lightmode{
-    background-color: white;
-    transition: all 1s;
-}
-
 h1,h2,h3{
     font-family: 'Dosis', sans-serif;
 }
@@ -35,44 +30,26 @@ body{
 #totop{
     min-width: 40px; 
     cursor: pointer;
-    z-index: 9999;
 }
 
 a{
     text-decoration: none;
 }
 
-@keyframes toTop{
-    from {width: 7px;}
-    to {width: 80px;}
-}
-
-
 
 /* MAIN */
 
 .hero {
-    min-height: 60vh;
-    position: relative;
-}
-
-nav {
-    position: relative;
+    min-height: 50vh;
 }
 
 nav a{
     color:#348082 ;
-    transition: all 1s;
     font-size: 0.9em;
 }
 
 nav a:hover{
     border-bottom: 1px solid #348082;
-}
-
-nav div h3{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: lighter;
 }
 
 ul{
@@ -82,12 +59,15 @@ ul{
 }
 
 ul li{
-    padding: 5%;
+    padding: 3%;
 }
 
 main{
-    margin-top: 12%;
     text-align: center;
+}
+
+.maincontent{
+    padding: 9%;
 }
 
 main div h1{
@@ -96,7 +76,6 @@ main div h1{
 
 #arrow{
     font-size: 2em;
-    z-index: -1;
     max-width: 20%;
     animation: blinkingText 1s infinite 5s;
     box-shadow: none;
@@ -112,7 +91,7 @@ main div h1{
     right: 0;
     bottom: 9%;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
 }
 
 .social img{
@@ -121,13 +100,19 @@ main div h1{
 
 /* ABOUT ME */
 
-#aboutmesection{
-    scroll-behavior: smooth;
+.aboutimage{
+    text-align: center;
 }
 
-.aboutcontent{
-    padding: 7%;
+#aboutmesection{
+    scroll-behavior: smooth;
+    padding: 5%;
 }
+
+b{
+    font-size: 1.5em;
+}
+
 #aboutmetitle{
    height: 40px;
    font-size: 2.5em;
@@ -137,15 +122,13 @@ main div h1{
 
 .abouttext{
     font-size:0.9em;
-}
-
-.aboutimage{
-    text-align: center;
+    text-align: left;
+    margin-top: 17%;
 }
 
 .mypic{
-    max-width: 15em;
-    margin-bottom: 9%;
+    max-width: 18em;
+    border-radius: 5%;
 }
 /* WHAT I KNOW */
 
@@ -189,12 +172,17 @@ main div h1{
 }
 
 #propics img{
-    max-width: 300px;
-    margin-bottom: 10%;
+    max-width: 75%;
+    margin: 5%;
+    border: 1px solid black;
 }
 
 #mypro{
     border-radius: 55px;
+}
+
+.noshadow{
+    box-shadow: none;
 }
 
 
@@ -299,7 +287,7 @@ textarea::placeholder{
 /* DARKMODE */
 #cat{
     position: fixed;
-    top: 4%;
+    top: 3%;
     left: 1%;
 }
 
@@ -307,7 +295,7 @@ textarea::placeholder{
     max-width: 130%;
     position: absolute;
     bottom: 30%;
-    left: -11px;
+    left: -7px;
     transition: all 1s;
 }
 
@@ -315,7 +303,7 @@ textarea::placeholder{
     max-width: 60%;
     position: absolute;
     bottom: -5%;
-    left: 2px;
+    left: 8px;
     opacity: 0;
     transition: all 1s;
 }
@@ -370,94 +358,127 @@ label:active:after {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width:1024px ){
+@media screen and (min-width:600px ){
+    #protitle {
+        margin: 0;
+    }
+
+    .contacttitle {
+        font-size: 1.5em;
+    }
+
+    #contact p {
+        font-size: 1.2em;
+    }
+
+    .abouttext {
+        text-align: center;
+        width: 75%;
+        margin: 30px auto;
+    }
+
+}
+
+
+@media screen and (min-width:1000px ){
+   #aboutmetitle{
+       margin-bottom: 10%;
+   }
+
+   .mypic{
+    -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54); 
+    box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54);
+   }
+
+   .aboutwrapper{
+       display: flex;
+   }
+
+   .abouttext{
+       margin: 0 auto;
+       text-align: left;
+       width: 70%;
+   }
+
+   .skills {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 12%;
+    }
+
+
+   #propics img{
+       max-width: 55%;
+       -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54); 
+        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54);
+        transition: 1s;
+   }
+
+   #propics img:hover{
+       box-shadow: none;
+       
+   }
+
+   #plane{
+       max-width: 5%;
+   }
+
+   #contact form textarea:first-of-type {
+    min-width: 50vw;
+    }
+
+    #contact form textarea:nth-last-of-type(2) {
+    min-width: 50vw;
+    }
+
+    #contact form textarea:last-of-type {
+        min-width: 50vw;
+    }
+
+    .contacttitle{
+        width: 70%;
+        margin: auto;
+    }
+
+    .maincontent {
+        padding: 10%;
+    }
+}
+
+@media screen and (min-width:1300px ){
     main div h1{
         font-size: 4em;
     }
 
-    #plane{
-        width: 5%;
-    }
-
-    h1{
-        font-size: 2.5em;
-    }
-
-    #contact p{
-        margin-top: 0;
-        font-size: 1.5em;
-    }
-
-    #protitle{
-        font-size: 3.5em;
-        margin: 0;
-        margin-bottom: 5%;
-    }
-
     #aboutmetitle{
-        font-size: 3.5em;
-        margin-bottom: 8%;
+        font-size: 4em;
+        margin-bottom: 13%;
     }
 
-    #whatiknow h1{
-        font-size: 3.5em;
+    .abouttext {
+        font-size: 1.1em;
     }
 
     .mypic{
-        margin-top:9%
+        max-width: 22em;
     }
 
-    #whatiknow{
-        padding-bottom: 0;
+    #whatiknow h1{
+        font-size: 4em;
     }
-}
 
+    #protitle{
+        font-size: 4em;
+    }
 
-@media screen and (min-width:1440px ){
+    .contacttitle{
+        width: 78%;
+        margin: auto;
+    }
 
-        nav ul li{
-            font-size: 2em;
-        }
-
-        main div h1{
-            font-size: 6em;
-        }
-
-        .mypic{
-            max-width: 25em;
-        }
-
-        #aboutmetitle{
-            font-size: 5.5em;
-            margin-bottom: 15%;
-        }
-
-        .abouttext{
-            font-size: 1.9em;
-        }
-
-        #whatiknow h1{
-            font-size: 6em;
-        }
-
-        .skills{
-            font-size: 2em;
-        }
-
-        #protitle {
-            font-size: 5.5em;
-            margin-bottom: 8%;
-        }
-
-        .contacttitle h1{
-            font-size: 3.5em;
-        }
-
-        #contact p{
-            font-size: 2em;
-        }
-
-        #totop{
-            bottom: 26px;
-        }
+    .social img {
+        width: 60px;
+    }
 }

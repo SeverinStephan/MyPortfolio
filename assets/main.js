@@ -112,7 +112,7 @@ let projects = [
     {
         img: "assets/img/alivio.jpg",
         name: "ALIVIO",
-        url: "https://severinstephan.github.io/Alivio/"
+        url: "https://fathomless-dawn-97207.herokuapp.com/"
     },
     {
         img: "assets/img/california.jpg",
@@ -149,16 +149,7 @@ let projects = [
         name: "HEADPHONE",
         url: "https://severinstephan.github.io/Headphone/"
     },
-    {
-        img: "assets/img/quiz.jpg",
-        name: "QUIZ",
-        url: "https://severinstephan.github.io/QUIZ/"
-    },
-    {
-        img: "assets/img/rockpaper.jpg",
-        name: "ROCK PAPER SCISSOR",
-        url: "https://severinstephan.github.io/Rock-Paper-Scissor/"
-    },
+
     {
         img: "assets/img/takeaction.jpg",
         name: "TAKE ACTION",
@@ -240,6 +231,7 @@ let hey = document.getElementById("hey")
 let clickcat = document.getElementById("clickcat")
 let sun = document.getElementById("sun")
 let moon = document.getElementById("moon")
+let arrow = document.getElementById("arrow")
 let isOn = true
 
 function darkMode() {
@@ -252,6 +244,7 @@ function darkMode() {
         moon.style.bottom = "69%"
         sun.style.bottom = "-45%"
 
+
     } else {
         body.classList.remove("darkmode")
         body.style.transition = "all 1s"
@@ -262,4 +255,5 @@ function darkMode() {
     }
 
 }
+
 
