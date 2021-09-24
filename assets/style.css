@@ -110,7 +110,7 @@ main div h1{
 }
 
 b{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #aboutmetitle{
@@ -129,6 +129,7 @@ b{
 .mypic{
     max-width: 20em;
     border-radius: 5%;
+    border: 2px solid black;
 }
 /* WHAT I KNOW */
 
@@ -174,7 +175,8 @@ b{
 #propics img{
     max-width: 75%;
     margin: 5%;
-    border: 1px solid black;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 #mypro{
@@ -223,16 +225,19 @@ b{
  #contact form textarea:first-of-type{
      min-width: 90vw;
      min-height: 5vh;
+     border-radius: 5px;
  }
 
  #contact form textarea:nth-last-of-type(2){
     min-width: 90vw;
     min-height: 5vh;
+    border-radius: 5px;
 }
 
 #contact form textarea:last-of-type{
     min-width: 90vw;
     height: 30vh;
+    border-radius: 5px;
 }
 
 textarea::placeholder{
@@ -250,6 +255,10 @@ textarea::placeholder{
     font-size: 15px;
     border-radius: 10px;
     transition: all 0.5s;
+  }
+
+  form input{
+      border: 1px solid #232420;
   }
 
   #send:hover{
@@ -457,6 +466,16 @@ label:active:after {
     .contacttitle h1{
         width: 50%;
         margin: auto;
+    }
+
+    #contact form textarea{
+        -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30); 
+        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30);
+    }
+
+    #send{
+        -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30); 
+        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30);
     }
 
     .maincontent {
