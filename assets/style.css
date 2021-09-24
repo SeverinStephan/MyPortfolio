@@ -127,7 +127,7 @@ b{
 }
 
 .mypic{
-    max-width: 18em;
+    max-width: 20em;
     border-radius: 5%;
 }
 /* WHAT I KNOW */
@@ -356,6 +356,16 @@ label:active:after {
 	min-width: 40px;
 }
 
+#contact form textarea:first-of-type {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#contact form textarea:nth-last-of-type(2) {
+    text-align: center;
+    padding-top: 15px;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:600px ){
@@ -397,7 +407,9 @@ label:active:after {
    .abouttext{
        margin: 0 auto;
        text-align: left;
-       width: 70%;
+   }
+   #aboutmesection{
+       padding: 0 19%;
    }
 
    .skills {
@@ -439,6 +451,11 @@ label:active:after {
 
     .contacttitle{
         width: 70%;
+        margin: auto;
+    }
+
+    .contacttitle h1{
+        width: 50%;
         margin: auto;
     }
 

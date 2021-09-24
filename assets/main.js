@@ -87,7 +87,7 @@ function loop4() {
 // MY PROJECTS
 
 const projectsTitle = document.getElementById("protitle")
-const textProjects = ["My Projects:"]
+const textProjects = ["Some templates i coded:"]
 
 let m = 0
 let n = 0
@@ -122,7 +122,7 @@ let projects = [
     {
         img: "assets/img/coffeeshop.jpg",
         name: "COFFEE & CO",
-        url: "https://severinstephan.github.io/Alivio/"
+        url: "https://severinstephan.github.io/Coffe-Co./"
     },
     {
         img: "assets/img/critique.jpg",
