@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
-/* font-family: 'Dosis', sans-serif;
-font-family: 'Source Code Pro', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Work+Sans&display=swap');
+/* font-family: 'Didact Gothic', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 /* colors: text: #232420 */
 /* #8BC5D7 #DACDFB*/
 
+@font-face {
+    font-family: Mallory;
+    src: url(/assets/fonts/Mallory.woff);
+}
+
+@font-face {
+    font-family: MallorySmall;
+    src: url(/assets/fonts/MallorySmall.woff);
+}
 
 * {
     margin: 0;
@@ -17,23 +28,23 @@ font-family: 'Source Code Pro', monospace; */
     transition: all 1s;
 }
 
-h1,h2,h3{
-    font-family: 'Dosis', sans-serif;
+
+h1,h3{
+    font-family: Mallory;
 }
 
 body{
     color: #232420;
-    font-family:'Source Code Pro', monospace; 
+    font-family: MallorySmall; 
     position: relative;
-}
-
-#totop{
-    min-width: 40px; 
-    cursor: pointer;
 }
 
 a{
     text-decoration: none;
+}
+
+p{
+    color: #403c4a;;
 }
 
 
@@ -41,15 +52,18 @@ a{
 
 .hero {
     min-height: 50vh;
+    background-color: #FFE742;
 }
 
 nav a{
-    color:#348082 ;
-    font-size: 0.9em;
+    color:white ;
+    font-size: 0.7em;
+    font-weight: bolder;
 }
 
-nav a:hover{
-    border-bottom: 1px solid #348082;
+nav {
+    background-color:#232420 ;
+    border-bottom:3px solid pink;
 }
 
 ul{
@@ -62,76 +76,175 @@ ul li{
     padding: 3%;
 }
 
+.me{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+    position: absolute;
+    right: 5px;
+}
+
 main{
     text-align: center;
 }
 
 .maincontent{
-    padding: 9%;
+    padding: 14%;
+}
+
+.maincontent h2{
+    font-size: 1.5em;
+    font-family: Mallory;
 }
 
 main div h1{
     font-size: 3em;
 }
 
-#arrow{
-    font-size: 2em;
-    max-width: 20%;
-    animation: blinkingText 1s infinite 5s;
-    box-shadow: none;
-}
-
-@keyframes blinkingText{
-    from {opacity: 0%;}
-    to {opacity: 100%;}
+.lastname{
+    background-color: #232420;
+    color: #FFE742;
+    width: 210px;
+    margin: auto;
 }
 
 .social{
-    writing-mode: vertical-lr;
-    right: 0;
-    bottom: 9%;
-    position: fixed;
-    z-index: 9;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social a{
+    margin-right: 2%;
 }
 
 .social img{
-    width: 30px;
+    width: 60px;
 }
+
 
 /* ABOUT ME */
-
-.aboutimage{
-    text-align: center;
-}
 
 #aboutmesection{
     scroll-behavior: smooth;
     padding: 5%;
+    margin-top: 25px;
 }
 
-b{
-    font-size: 1em;
+#aboutmesection h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.5em;
 }
 
-#aboutmetitle{
-   height: 40px;
-   font-size: 2.5em;
-   text-align: center;
-   margin-bottom: 16%;
+#aboutmesection h2{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:#78757f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
-.abouttext{
-    font-size:0.9em;
-    text-align: left;
-    margin-top: 17%;
+#aboutmesection h3{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #78757f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
-.mypic{
-    max-width: 20em;
-    border-radius: 5%;
-    border: 2px solid black;
+.radio{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+.radio p{
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #78757f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+#abouttext{
+    font-size:1.1em;
+    text-align: center;
+    margin-bottom: 15%;
+    padding: 7%;
+}
+
+#chosenpic{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+}
+
+.portrait p{
+    text-align: center;
+}
+
+.portrait h3{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #78757f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.gallery img{
+    width: 15%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
 }
 /* WHAT I KNOW */
+
+
+
+.creating{
+    background: url(./img/yellow.png) center/cover no-repeat;
+    padding-bottom: 8%;
+    transition: all 1s;
+    background-size: 300px;
+}
+
+.styling{
+    background: url(./img/green.png) center/cover no-repeat;
+    padding-bottom: 13%;
+    transition: all 1s;
+    background-size: 300px;
+}
+
+.cms{
+    background: url(./img/blue.png) center/cover no-repeat;
+    padding-bottom: 18%;
+    transition: all 1s;
+    background-size: 300px;
+}
+
+.whatelse{
+    background: url(./img/pink.png) center/cover no-repeat;
+    padding-bottom: 18%;
+    transition: all 1s;
+    background-size: 300px;
+}
 
 #whatiknow{
     padding-bottom: 10%;
@@ -139,9 +252,9 @@ b{
 
 #whatiknow h1{
     text-align: center;
-    font-size: 2.5em;
-    padding-top: 10%;
-    height: 100px;
+    font-size: 3em;
+    margin-top: 15%;
+    font-weight: lighter;
 }
 
 .skills{
@@ -152,20 +265,34 @@ b{
 .skills div li{
     list-style: none;
     text-align: center;
+    font-size: 1em;
 }
 
 .skills div h2{
     margin: 5%;
     text-align: center;
+    font-size: 1.8em;
+    font-weight: lighter;
 }
 /* MY PROJECTS */
 
+.computer{
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top: -73px;
+}
 
 #protitle{
     font-size: 2.5em;
     text-align: center;
-    height: 100px;
-    margin: 10%;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+#mypro p{
+    text-align: center;
+    padding: 6%;
 }
 
 #propics{
@@ -173,53 +300,63 @@ b{
 }
 
 #propics img{
-    max-width: 75%;
+    max-width: 50%;
     margin: 5%;
     border-radius: 5px;
     border: 2px solid black;
 }
 
 #mypro{
-    border-radius: 55px;
+   background-color: #87FFFB;
+   padding-top: 30px;
+   padding-bottom: 18%;
 }
 
-.noshadow{
-    box-shadow: none;
-}
+
 
 
 /* CONTACT */
 
+.lastpic{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+    display: block;
+    margin: 4% auto;
+    margin-bottom: 43%;
+    margin-bottom: -174px;
+}
+
+
 #contact{
-    position: relative;
-    margin: 5%;
-    border-radius: 5%;
+    background-color: #FFE742;
     text-align: center;
+    padding-top: 1%;
+    padding-bottom: 200px;
 }
 
 .contacttitle{
-    font-size: 1em;
+    font-size: 1.4em;
     margin-bottom: 9%;
+    margin-top: 190px;
 }
 
-#contacttext{
-    margin-top: 2%;
-    min-height: 50px;
+.contacttitle h3{
+    font-family: MallorySmall;
+    font-size: 0.8em;
+    padding: 4%;
+    font-weight: lighter;
 }
-
-
- #contact p{
-     font-size: 0.9em;
- }
 
  #contact form{
      text-align: center;
-     margin-top: 3%;
      width: 100%;
  }
 
  #contact form textarea{
-    font-family: 'Source Code Pro', monospace;
+    font-family: MallorySmall;
  }
 
  #contact form textarea:first-of-type{
@@ -242,27 +379,29 @@ b{
 
 textarea::placeholder{
     text-align: center;
-    padding-top: 10px;
+}
+
+#contact form textarea ::placeholder:last-of-type{
+    margin-top: 10%;
 }
 
   #send{
-    background: linear-gradient(to right, #8BC5D7, #DACDFB);
+    background-color: pink;
     min-width: 130px;
     min-height: 40px;
     margin-top: 16px;
-    font-family: 'Source Code Pro', monospace;
     transition: all 250ms;
-    font-size: 15px;
     border-radius: 10px;
     transition: all 0.5s;
   }
+
+  
 
   form input{
       border: 1px solid #232420;
   }
 
   #send:hover{
-    background-color: darkgrey;
     cursor: pointer;
     -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20); 
     box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.20);
@@ -272,14 +411,19 @@ textarea::placeholder{
     animation: move 1s forwards ease-in-out;
   }
 
+  .sendwrapper{
+    display: flex;
+    justify-content: center;
+    position:relative;
+  }
+
+
   #plane{
-    max-width: 13%;
-    position: absolute;
-    position:inherit;
-    right: 90px;
-    bottom: 31px;
-    outline: none;
+    max-width: 153px;
     offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
+    position: absolute;
+    left: 67%;
+    bottom: 10%;
 }
 
 @keyframes move{
@@ -296,7 +440,7 @@ textarea::placeholder{
 /* DARKMODE */
 #cat{
     position: fixed;
-    top: 3%;
+    top: 2%;
     left: 1%;
 }
 
@@ -377,144 +521,228 @@ label:active:after {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width:600px ){
-    #protitle {
-        margin: 0;
+@media screen and (min-width:900px ){
+
+    .hero{
+        min-height: 100vh;
     }
 
-    .contacttitle {
+    .maincontent{
+        padding: 6%;
+    }
+
+    main div h1 {
+        font-size: 170px;
+    }
+
+    .lastname{
+        width: 600px;
+        font-size: 140px;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 500px;
+    }
+
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        padding: 8%;
+        padding-top: 0;
+    }
+
+    .skills div{
+        background-size: 200px;
+        padding-top: 5%;
+    }
+
+    #whatiknow h1{
+        font-size: 5em;
+    }
+
+    #mypro p{
         font-size: 1.5em;
+        width: 524px;
+        margin: auto;
     }
 
-    #contact p {
-        font-size: 1.2em;
+
+    #protitle{
+        font-size: 4em;
     }
 
-    .abouttext {
-        text-align: center;
-        width: 75%;
-        margin: 30px auto;
+    .lastpic{
+        width: 300px;
+        margin-bottom: -17%;
+    }
+
+    .contacttitle h3{
+        width: 550px;
+        margin: auto;
+    }
+
+    #contact form textarea:first-of-type{
+        min-width: 500px;
+    }
+
+    #contact form textarea:nth-last-of-type(2){
+        min-width: 500px;
+    }
+    #contact form textarea:last-of-type{
+        min-width: 500px;
     }
 
 }
 
 
 @media screen and (min-width:1000px ){
-   #aboutmetitle{
-       margin-bottom: 10%;
-   }
 
-   .mypic{
-    -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54); 
-    box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54);
-   }
-
-   .aboutwrapper{
-       display: flex;
-   }
-
-   .abouttext{
-       margin: 0 auto;
-       text-align: left;
-   }
-   #aboutmesection{
-       padding: 0 19%;
-   }
-
-   .skills {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding: 0;
-    margin-top: 12%;
+    nav a{
+        font-size: 1em;
     }
 
-
-   #propics img{
-       max-width: 55%;
-       -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54); 
-        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.54);
-        transition: 1s;
-   }
-
-   #propics img:hover{
-       box-shadow: none;
-       
-   }
-
-   #plane{
-       max-width: 5%;
-   }
-
-   #contact form textarea:first-of-type {
-    min-width: 50vw;
-    }
-
-    #contact form textarea:nth-last-of-type(2) {
-    min-width: 50vw;
-    }
-
-    #contact form textarea:last-of-type {
-        min-width: 50vw;
-    }
-
-    .contacttitle{
-        width: 70%;
+    #contact form{
+        width: 90%;
         margin: auto;
     }
 
-    .contacttitle h1{
-        width: 50%;
-        margin: auto;
+    #propics img{
+        max-width: 23%;
     }
 
-    #contact form textarea{
-        -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30); 
-        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30);
+    #mypro p{
+        font-size: 1.5;
     }
 
-    #send{
-        -webkit-box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30); 
-        box-shadow: 11px -4px 14px -4px rgba(0,0,0,0.30);
+    .me{
+        width: 90px;
+        height: 90px;
     }
 
-    .maincontent {
-        padding: 10%;
+    #contact h3{
+        font-size: 1em;
     }
+    
+
 }
 
-@media screen and (min-width:1300px ){
-    main div h1{
-        font-size: 4em;
+@media screen and (min-width:1068px ){
+    
+    .maincontent {
+        padding: 4%;
     }
 
-    #aboutmetitle{
-        font-size: 4em;
-        margin-bottom: 13%;
+    .maincontent h2{
+        font-size: 3.5em;
     }
 
-    .abouttext {
-        font-size: 1.1em;
-    }
-
-    .mypic{
-        max-width: 22em;
+    .me{
+        margin-top: 14px;
     }
 
     #whatiknow h1{
-        font-size: 4em;
+        font-size: 8em;
+        margin-top: 110px;
+    }
+
+    #whatiknow{
+        padding-bottom: 0;
+    }
+
+    #aboutmesection h1{
+        font-size: 2.5em;
+    }
+
+    #aboutmesection h2{
+        font-size: 14px;
+    }
+
+    .radio p{
+        font-size: 16px;
+    }
+
+    #abouttext{
+        font-size: 1.5em;
+    }
+
+    .skills div li{
+        font-size: 1.5em;
     }
 
     #protitle{
-        font-size: 4em;
+        font-size: 8em;
+    }
+
+    #mypro{
+        padding-bottom: 90px;
+    }
+
+    #titlecontact{
+        font-size: 3em;
     }
 
     .contacttitle{
-        width: 78%;
-        margin: auto;
+        margin-bottom: 20px;
     }
 
-    .social img {
-        width: 60px;
+}
+
+
+
+@media screen and (min-width:1115px ){
+
+
+
+    #contact form{
+        width: 70%;
     }
+
+    .contacttitle{
+        margin-top: 235px;
+    }
+
+    .lastpic{
+        margin-bottom: -14%;
+    }
+
+    #mypro p{
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width:1400px ){
+
+    #contact form{
+        width: 60%;
+    }
+
+    nav a{
+        font-size: 1.5em;
+    }
+
+    .skills div h2{
+        font-size: 2.8em;
+    }
+
+
+    #mypro p{
+        width: 62%;
+    }
+
+    .contacttitle h3{
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    article{
+        grid-template-columns: 1fr 800px;
+    }
+
+    .lastpic {
+        margin-bottom: -11%;
+    }
+    
+
 }

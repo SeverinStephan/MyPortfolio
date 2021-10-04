@@ -1,110 +1,57 @@
-// MAIN
-
-const typewrite = document.getElementById("typewrite")
-const text = ["Frontend Web Developer" + "<br>" + "Find out more ..."]
-const arrowDown = document.getElementById("arrow")
-let i = 0
-let j = 0
-let currentText = []
-
-function loop() {
-    typewrite.innerHTML = currentText.join("")
-    if (i < text.length) {
-
-        if (j <= text[i].length) {
-            currentText.push(text[i][j])
-            j++
-        }
-    }
-    setTimeout(loop, 100)
-
-}
-
-loop()
 
 // TOTOP Button
 
-let toTop = document.getElementById("totop")
+//let toTop = document.getElementById("totop")
 
-toTop.addEventListener("click", function () {
+//toTop.addEventListener("click", function () {
 
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    })
+// window.scrollTo({
+//      top: 0,
+//      left: 0,
+//       behavior: "smooth"
+//  })
 
-})
+//})
 
-// ABOUT ME
+// ABOUTME
 
+let textContent = document.getElementById("abouttext")
+const radioButton = document.getElementById("kurz")
 
-const aboutMeTitle = document.getElementById("aboutmetitle")
-const textAbout = ["About me:"]
-
-let o = 0
-let u = 0
-let currentAboutText = []
-
-function loop2() {
-    aboutMeTitle.innerHTML = currentAboutText.join("")
-    if (o < textAbout.length) {
-
-        if (u <= textAbout[o].length) {
-            currentAboutText.push(textAbout[o][u])
-            u++
-        }
-    }
-    setTimeout(loop2, 100)
+function kurz() {
+    textContent.innerHTML = "<p><b>Severin Stephan</b> macht super tolle Webseiten!</p>"
 }
 
-
-// WHAT I KNOW
-
-
-const knowTitle = document.getElementById("whatiknowtitle")
-const textKnow = ["My Skills:"]
-
-let k = 0
-let l = 0
-let currentKnow = []
-
-function loop4() {
-    knowTitle.innerHTML = currentKnow.join("")
-    if (k < textProjects.length) {
-
-        if (l <= textKnow[k].length) {
-            currentKnow.push(textKnow[k][l])
-            l++
-        }
-    }
-    setTimeout(loop4, 100)
+function mittel() {
+    textContent.innerHTML = "<p><b>Severin Stephan</b> hat eine Weiterbildung zur Web Entwicklerin gemacht und arbeitet jetzt selbständig. Sie ist eine waschechte Berlinerin, lebt in Prenzlauer Berg, liebt das Reisen und die Natur. </p>"
 }
 
-
-
-
-// MY PROJECTS
-
-const projectsTitle = document.getElementById("protitle")
-const textProjects = ["Some templates i coded:"]
-
-let m = 0
-let n = 0
-let currentProjects = []
-
-function loop3() {
-    projectsTitle.innerHTML = currentProjects.join("")
-    if (m < textProjects.length) {
-
-        if (n <= textProjects[m].length) {
-            currentProjects.push(textProjects[m][n])
-            n++
-        }
-    }
-    setTimeout(loop3, 100)
+function langeVersion() {
+    textContent.innerHTML = "<p><b>Severin Stephan</b> Liebt die Magie die passiert wenn man all diese Zeichen und Nummer eingibt. Es sieht aus wie ein Chaos aber am Ende kommt eine wunderschöne Webseite dabei raus. 2018 ist Severin zum ersten Mal in die Welt von HTML und CSS eingetaucht und hat stundenlang im Schlafanzug mit Tee und Cracker vor dem Laptop gesessen. Da wusste sie, das ist etwas womit sie ihren Lebensunterhalt verdienen will. Ein Job der Spass macht. Toll! Also hat sie mitten im Lockdown eine Weiterbildung zur Web Entwicklerin gemacht und ist nun fertig. Sie freut sich anderen zu helfen ihre Ideen in das World Wide Web zu laden! </p>"
 }
 
+// GALLERY
+
+const mainPic = document.getElementById("mainpic")
+
+
+function wald() {
+    mainPic.innerHTML = "<img src=assets/img/Portrait4.jpg style= width:60%;display:block;margin:auto;margin-top:15%>"
+}
+
+function bus() {
+    mainPic.innerHTML = "<img src=assets/img/Portrait7.jpg style= width:60%;display:block;margin:auto;margin-top:15%>"
+}
+
+function hund() {
+    mainPic.innerHTML = "<img src=assets/img/Portrait8.jpg style= width:60%;display:block;margin:auto;margin-top:15%>"
+}
+
+function klein() {
+    mainPic.innerHTML = "<img src=assets/img/Portrait12.jpg style= width:60%;display:block;margin:auto;margin-top:15%>"
+}
+
+// PROJECTS
 
 const proPics = document.getElementById("propics")
 
@@ -172,27 +119,7 @@ projects.forEach(ele => {
     proPics.innerHTML += `<a href=${ele.url} target="_blank"> <img src=${ele.img} /> <a/>`
 })
 
-
-// CONTACT
-
-const contactResult = document.getElementById("contacttext")
-const textContact = ["Send me over a message and let´s push your idea to the next level!"]
-
-let x = 0
-let y = 0
-let currentContact = []
-
-function loop5() {
-    contactResult.innerHTML = currentContact.join("")
-    if (x < textContact.length) {
-
-        if (y <= textContact[x].length) {
-            currentContact.push(textContact[x][y])
-            y++
-        }
-    }
-    setTimeout(loop5, 100)
-}
+// CONTACT SEND
 
 let flyButton = document.getElementById("send")
 let plane = document.getElementById("plane")
@@ -200,38 +127,36 @@ let plane = document.getElementById("plane")
 function flyAway() {
     setTimeout(() => {
         plane.classList.add("go")
-        flyButton.style.background = "#348082"
+        flyButton.style.background = "#7ED957"
         flyButton.value = "Done"
     }, 500)
 }
 
-// CAT
-
-const eye1 = document.querySelector('.irisone');
-const eye2 = document.querySelector('.iristwo')
-window.addEventListener('mousemove', (evt) => {
-    const x = -(window.innerWidth / 2 - evt.pageX) / 160;
-    const y = -(window.innerHeight / 2 - evt.pageY) / 650;
-    eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
-    eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
-});
+// DARKMODE
 
 let body = document.getElementById("darkmode")
 let hero = document.querySelector("section")
-let meCircle = document.getElementById("mecircle")
-let whatIknow = document.getElementById("whatiknow")
-let linkedIn = document.querySelector(".linkedin")
-let gitHub = document.querySelector(".github")
+let nav = document.querySelector("a")
 let contact = document.getElementById("contact")
 let sendButton = document.getElementById("send")
-let aboutMe = document.getElementById("aboutmesection")
 let myPro = document.getElementById("mypro")
 let myButton1 = document.querySelector(".button1")
 let hey = document.getElementById("hey")
-let clickcat = document.getElementById("clickcat")
 let sun = document.getElementById("sun")
 let moon = document.getElementById("moon")
-let arrow = document.getElementById("arrow")
+let creating = document.querySelector(".creating")
+let styling = document.querySelector(".styling")
+let cms = document.querySelector(".cms")
+let whatElse = document.querySelector(".whatelse")
+let short = document.getElementById("short")
+let middle = document.getElementById("middle")
+let long = document.getElementById("long")
+let projekteText = document.getElementById("projektetext")
+let bubble = document.querySelector(".bubble")
+let triangle = document.querySelector(".triangle")
+let skills = document.getElementById("whatiknowtitle")
+let projektTitle = document.getElementById("protitle")
+let contactTitle = document.getElementById("titlecontact")
 let isOn = true
 
 function darkMode() {
@@ -243,6 +168,27 @@ function darkMode() {
         moon.style.opacity = "1"
         moon.style.bottom = "69%"
         sun.style.bottom = "-45%"
+        creating.style.background = "none"
+        styling.style.background = "none"
+        cms.style.background = "none"
+        whatElse.style.background = "none"
+        hero.style.backgroundColor = "#232420"
+        nav.style.color = "white"
+        short.style.color = "white"
+        middle.style.color = "white"
+        long.style.color = "white"
+        myPro.style.backgroundColor = "#232420"
+        projekteText.style.color = "white"
+        bubble.style.color = "white"
+        bubble.style.border = "2px solid white"
+        triangle.style.borderTop = "20px solid white"
+        triangle.style.borderLeft = "20px solid transparent"
+        triangle.style.borderRight = "20px solid transparent"
+        skills.style.color = "#ffe742"
+        projektTitle.style.color = "#ffe742"
+        contact.style.backgroundColor = "#232420"
+        contactTitle.style.color = "#ffe742"
+        sendButton.style.backgroundColor = "#ffe742"
 
 
     } else {
@@ -252,6 +198,27 @@ function darkMode() {
         moon.style.bottom = "-5%"
         sun.style.opacity = "1"
         moon.style.opacity = "0"
+        creating.style.background = ""
+        styling.style.background = ""
+        cms.style.background = ""
+        whatElse.style.background = ""
+        hero.style.backgroundColor = ""
+        nav.style.color = ""
+        short.style.color = ""
+        middle.style.color = ""
+        long.style.color = ""
+        myPro.style.backgroundColor = ""
+        projekteText.style.color = ""
+        bubble.style.color = ""
+        bubble.style.border = ""
+        triangle.style.borderTop = ""
+        triangle.style.borderLeft = ""
+        triangle.style.borderRight = ""
+        skills.style.color = ""
+        projektTitle.style.color = ""
+        contact.style.backgroundColor = ""
+        contactTitle.style.color = ""
+        sendButton.style.backgroundColor = ""
     }
 
 }

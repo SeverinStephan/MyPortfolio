@@ -8,6 +8,7 @@
     <title>Web Developer</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <a href="https://icons8.com/icon/12599/github"></a>
 </head>
 
 <body id="darkmode">
@@ -23,70 +24,80 @@
                     <input onclick="darkMode()" type="checkbox" id="switch" /><label for="switch">Toggle</label>
                 </section>
                 <li><a href="#aboutmesection">About</a></li>
-                <li><a href="#mypro">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#mypro">Vorlagen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <img class="me" src="./assets/img/Portrait11.jpg" alt="">
             </ul>
         </nav>
 
         <main>
             <div class="maincontent">
                 <h1>
-                    Hey! <br> I´m Severin. <br>
+                    Severin
                 </h1>
-                <h2 id="typewrite"></h2>
-                <img id="arrow" src="./assets/img/arrowdown.png" alt="">
+                <h1 class="lastname">
+                    Stephan
+                </h1>
+                <h2>macht Webseiten!</h2>
             </div>
-
-            <div class="social">
-                <a href="https://linkedin.com/in/severin-stephan/" target="_blank"><img src="./assets/img/linkedin.png"
-                        class="linkedin"></a>
-
-                <a href=https://github.com/SeverinStephan" target="_blank"><img src="./assets/img/github.png"
-                        class="github" href=></a>
-
-                <img id="totop" src="./assets/img/totop.png" alt="">
-            </div>
-
         </main>
-
     </section>
+
 
     <!-- ABOUT ME -->
-
-    <section id="aboutmesection" onmouseover="loop2()">
-        <h1 id="aboutmetitle"></h1>
-        <div class="aboutwrapper">
-            <div class="aboutimage">
-                <img class="mypic" src="./assets/img/IchPalmen.png" alt="">
+    <article>
+        <section id="aboutmesection">
+            <h1>About Severin:</h1>
+            <h2>Wieviel willst Du wissen?</h2>
+            <div class="radio">
+                <input type="radio" id="kurz" name="text" value="kurz" onclick="kurz()">
+                <p id="short">kurz</p>
+                <input type="radio" id="mittel" name="text" value="mittel" onclick="mittel()">
+                <p id="middle">mittel</p>
+                <input type="radio" id="lang" name="text" value="lang" onclick="langeVersion()">
+                <p id="long">lang</p>
             </div>
-            <div class="aboutcontent">
-                <p class="abouttext">
-                    <b>I love the magic</b> <br> that happens while writing some code. <br> All these letters, numbers
-                    and
-                    signs
-                    seems
-                    to be
-                    a chaotic system but in the end they work all together and create a wonderful looking website.<br>
-                    <br>
-                    <b>In 2018 I deepdived</b> <br> into the system for the first time and forgot the world around me.
-                    Since then I knew, that is going to be something I wanna do for living. <br> <br>
-                    <b> So I grabbed the chance</b> <br> in 2021 i did a 6 month course as a web developer.
-                    Living in Berlin and always in a mood for traveling i am now happy to help people getting their
-                    ideas
-                    into the
-                    worldwideweb.
-                </p>
+            <div class="aboutwrapper">
+                <div class="aboutcontent">
+                    <p id="abouttext">
+                    </p>
+                </div>
+            </div>
+            <h3>Connecte Dich mit Severin:</h3>
+            <div class="social">
+                <a href="https://github.com/SeverinStephan" target="_blank"><img
+                        src="https://img.icons8.com/ios-filled/50/fa314a/github.png" /></a>
+
+                <a href="https://www.instagram.com/sevi_berlin/" target="_blank"><img
+                        src="https://img.icons8.com/ios-filled/50/fa314a/instagram--v1.png" /></a>
+
+                <a href="https://www.linkedin.com/in/severin-stephan/" target="_blank"><img
+                        src="https://img.icons8.com/ios-filled/50/fa314a/linkedin-circled--v1.png" /></a>
+            </div>
+        </section>
+
+
+        <div class="portrait">
+            <div id="mainpic">
+                <img id="chosenpic" src="./assets/img/Portrait4NEU.png" alt="">
+            </div>
+            <h3>Portrait von Severin</h3>
+            <div class="gallery">
+                <img src="./assets/img/Portrait4NEU.png" alt="" onclick="wald()">
+                <img src="./assets/img/Portrait7NEU.png" alt="" onclick="bus()">
+                <img src="./assets/img/Portrait8NEU.png" alt="" onclick="hund()">
+                <img src="./assets/img/Portrait12NEU.png" alt="" onclick="klein()">
             </div>
         </div>
-    </section>
+    </article>
 
-    <section onmouseover="loop4()" id="whatiknow">
+    <section id="whatiknow">
         <div>
-            <h1 id="whatiknowtitle"></h1>
+            <h1 id="whatiknowtitle">Skills:</h1>
         </div>
 
         <div class="skills">
-            <div>
+            <div class="creating">
                 <h2>Creating</h2>
                 <li>HTML</li>
                 <li>JAVASCRIPT</li>
@@ -97,7 +108,7 @@
                 <li>EJS</li>
             </div>
 
-            <div>
+            <div class="styling">
                 <h2>Styling</h2>
                 <li>Responsive Design</li>
                 <li>CSS/SASS</li>
@@ -105,18 +116,18 @@
                 <li>Figma</li>
             </div>
 
-            <div>
+            <div class="cms">
                 <h2>CMS</h2>
                 <li>WIX</li>
                 <li>SHOPIFY + Oberlo</li>
                 <li>WORDPRESS</li>
             </div>
 
-            <div>
-                <h2>What else</h2>
+            <div class="whatelse">
+                <h2>Mehr</h2>
                 <li>SEO</li>
                 <li>Social Media Ads</li>
-                <li>Willing to learn new stuff</li>
+                <li>Lerne schnell neue Skills</li>
             </div>
         </div>
 
@@ -124,36 +135,45 @@
 
     <!-- MY PROJECTS -->
 
-    <section onmouseover="loop3()" id="mypro">
+
+
+    <section id="mypro">
+        <img class="computer" src="./assets/img/computer.png" alt="">
         <div>
-            <h1 id="protitle"></h1>
+            <h1 id="protitle">Vorlagen</h1>
+            <p id="projektetext">Während ihrer Zeit in der Weiterbildung hat Severin einige Vorlagen gecoded. <b> Hier
+                    ein paar
+                    Beispiele:</b>
+            </p>
         </div>
         <div id="propics">
         </div>
+
     </section>
 
-
+    <img class="lastpic" src="./assets/img/Portrait6NEU.png" alt="">
     <!-- CONTACT -->
 
-    <section id="contact" onmouseover="loop5()">
+    <section id="contact">
         <div class="contacttitle">
-            <h1>
-                I take on freelance opportunities to help you out with your private or business project
+            <h1 id="titlecontact">
+                Wenn nicht jetzt, wann dann?
             </h1>
+
+            <h3>Was Du heute kannst besorgen......und so weiter. Zusammen schaffen wir das, ich helfe Dir mit Deinem
+                Business Projekt, Blog oder Portfolio. </h3>
         </div>
-        <div>
-            <p id="contacttext">
-            </p>
-        </div>
-        <img id="arrow" src="./assets/img/arrowdown.png" alt="">
+
         <form action="" method="POST">
-            <textarea type="text" placeholder="Your name" onclick="this.value=' '"></textarea>
-            <textarea type="email" placeholder="Your email" onclick="this.value=' '"></textarea> <br>
-            <textarea type="text" placeholder="Your message" onclick="this.value=' '"></textarea>
+            <textarea type="text" placeholder="Name" onclick="this.value=' '"></textarea>
+            <textarea type="email" placeholder="Email" onclick="this.value=' '"></textarea> <br>
+            <textarea type="text" placeholder="Deine Nachricht" onclick="this.value=' '"></textarea>
             <br>
-            <input type="button" name="send" id="send" value="Send" onclick="flyAway()">
+            <div class="sendwrapper">
+                <input type="button" name="send" id="send" value="Ab die Post" onclick="flyAway()">
+                <img id="plane" src="./assets/img/paperplane.png" alt="">
+            </div>
         </form>
-        <img id="plane" src="./assets/img/newplane.png" alt="">
 
 
     </section>
