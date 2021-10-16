@@ -322,7 +322,7 @@ main div h1{
     border-radius: 50%;
     border: 3px solid lightblue;
     display: block;
-    margin: 4% auto;
+    margin: auto;
     margin-bottom: 43%;
     margin-bottom: -174px;
 }
@@ -333,6 +333,7 @@ main div h1{
     text-align: center;
     padding-top: 1%;
     padding-bottom: 200px;
+    border-top: 3px solid pink;
 }
 
 .contacttitle{
