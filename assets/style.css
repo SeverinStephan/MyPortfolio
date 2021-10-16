@@ -521,7 +521,7 @@ label:active:after {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width:900px ){
+@media screen and (min-width:768px ){
 
     .hero{
         min-height: 100vh;
@@ -542,7 +542,17 @@ label:active:after {
 
     article{
         display: grid;
-        grid-template-columns: 1fr 500px;
+        grid-template-columns: 1fr 350px;
+    }
+
+    #chosenpic{
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .computer{
+        width: 20%;
+        margin-top: -100px;
     }
 
     .skills{
@@ -563,7 +573,7 @@ label:active:after {
 
     #mypro p{
         font-size: 1.5em;
-        width: 524px;
+        width: 87%;
         margin: auto;
     }
 
@@ -623,15 +633,16 @@ label:active:after {
     #contact h3{
         font-size: 1em;
     }
+
+    .computer{
+        margin-top: -128px;
+    }
     
 
 }
 
 @media screen and (min-width:1068px ){
     
-    .maincontent {
-        padding: 4%;
-    }
 
     .maincontent h2{
         font-size: 3.5em;
@@ -714,6 +725,15 @@ label:active:after {
 
 @media screen and (min-width:1400px ){
 
+    .maincontent{
+        padding: 3%;
+    }
+
+    #chosenpic{
+        width: 60%;
+        margin-top: 5%;
+    }
+
     #contact form{
         width: 60%;
     }
@@ -728,11 +748,15 @@ label:active:after {
 
 
     #mypro p{
-        width: 62%;
+        width: 59%;
+        font-size: 2em;
     }
 
     .contacttitle h3{
         width: 700px;
+    }
+
+    #contact h3{
         font-size: 1.5em;
     }
 
@@ -743,6 +767,55 @@ label:active:after {
     .lastpic {
         margin-bottom: -11%;
     }
-    
 
+    #send{
+        min-width: 160px;
+        min-height: 60px;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width:1672px ){
+    .maincontent {
+        padding: 18%;
+    }
+
+    #aboutmesection h1 {
+        font-size: 5em;
+    }
+
+    #aboutmesection h2 {
+        font-size: 29px;
+    }
+
+    .radio p {
+        font-size: 25px;
+    }
+
+    #aboutmesection h3{
+        font-size: 27px;
+    }
+
+    .portrait h3{
+        font-size: 27px;
+    }
+
+    #contact form textarea:first-of-type {
+        min-width: 70%;
+    }
+
+    #contact form textarea:nth-last-of-type(2) {
+        min-width: 70%;
+    }
+
+    #contact form textarea:last-of-type {
+        min-width: 70%;
+    }
+
+    #send {
+        min-width: 250px;
+        min-height: 60px;
+        font-size: 25px;
+    }
 }
