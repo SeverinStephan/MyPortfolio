@@ -50,16 +50,18 @@
             <h1>About Severin:</h1>
             <h2>Wieviel willst Du wissen? <br> Wähle aus zwischen:</h2>
             <div class="radio">
-                <input type="radio" id="kurz" name="text" value="kurz" onclick="kurz()">
+                <input type="radio" id="kurz" name="text" value="kurz" onclick="showText()">
                 <p id="short">kurz</p>
-                <input type="radio" id="mittel" name="text" value="mittel" onclick="mittel()">
+                <input type="radio" id="mittel" checked name="text" value="mittel" onclick="showText()">
                 <p id="middle">mittel</p>
-                <input type="radio" id="lang" name="text" value="lang" onclick="langeVersion()">
+                <input type="radio" id="lang" name="text" value="lang" onclick="showText()">
                 <p id="long">lang</p>
             </div>
             <div class="aboutwrapper">
                 <div class="aboutcontent">
                     <p id="abouttext">
+                        Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin
+                        eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur.
                     </p>
                 </div>
             </div>
@@ -98,7 +100,7 @@
 
         <div class="skills">
             <div class="creating">
-                <h2>Creating</h2>
+                <h2 id="gelb1">Creating</h2>
                 <li>HTML</li>
                 <li>JAVASCRIPT</li>
                 <li>REACT</li>
@@ -109,7 +111,7 @@
             </div>
 
             <div class="styling">
-                <h2>Styling</h2>
+                <h2 id="gelb2">Styling</h2>
                 <li>Responsive Design</li>
                 <li>CSS/SASS</li>
                 <li>Canva</li>
@@ -117,14 +119,14 @@
             </div>
 
             <div class="cms">
-                <h2>CMS</h2>
+                <h2 id="gelb3">CMS</h2>
                 <li>WIX</li>
                 <li>SHOPIFY + Oberlo</li>
                 <li>WORDPRESS</li>
             </div>
 
             <div class="whatelse">
-                <h2>Mehr</h2>
+                <h2 id="gelb4">Mehr</h2>
                 <li>SEO</li>
                 <li>Social Media Ads</li>
                 <li>Lerne schnell neue Skills</li>
@@ -139,7 +141,7 @@
         <div>
             <h1 id="protitle">Vorlagen</h1>
             <p id="projektetext">Während meiner Zeit in der Weiterbildung zur Web Entwicklung habe ich einige Vorlagen
-                gecoded. <b> Hier
+                gecoded. <b id="gelb5"> Hier
                     ein paar
                     Beispiele:</b>
             </p>
@@ -154,12 +156,12 @@
     <section id="contact">
         <div class="contacttitle">
             <h1 id="titlecontact">
-                Wenn nicht jetzt, wann dann?
+                Wenn nicht <span id="gelb6">jetzt</span>, wann dann?
             </h1>
 
-            <h3>Was Du heute kannst besorgen......und so weiter. <br> Zusammen schaffen wir das, ich helfe Dir mit
+            <h3>Was Du heute kannst besorgen......und so weiter.Zusammen schaffen wir das, ich helfe Dir mit
                 Deinem
-                Business Projekt, Blog oder Portfolio. <br> Schreib mir eine Nachricht und ich melde mich
+                Business Projekt, Blog oder Portfolio.Schreib mir eine Nachricht und ich melde mich
                 schnellstmöglich zurück. </h3>
         </div>
 

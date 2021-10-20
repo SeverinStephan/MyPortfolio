@@ -16,19 +16,21 @@
 // ABOUTME
 
 let textContent = document.getElementById("abouttext")
-const radioButton = document.getElementById("kurz")
+let kurz = document.getElementById("kurz")
+let mittel = document.getElementById("mittel")
+let lang = document.getElementById("lang")
 
-function kurz() {
-    textContent.innerHTML = "<p> Ich mache super tolle Webseiten!</p>"
+
+function showText() {
+    if (kurz.checked) {
+        textContent.innerHTML = "<p> Ich mache super tolle Webseiten!</p>"
+    }
+    else if (mittel.checked) {
+        textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
+    }
+    else { textContent.innerHTML = "<p> Diese Magie die passiert wenn man all diese Zeichen und Nummer eingibt. Es sieht aus wie ein Chaos aber am Ende kommt eine wunderschöne Webseite dabei raus. 2018 bin ich zum ersten Mal in die Welt von HTML und CSS eingetaucht und habe stundenlang im Schlafanzug mit Tee und Cracker vor dem Laptop gesessen. Da wusste ich, das ist etwas womit ich meien Lebensunterhalt verdienen will. Ein Job der Spass macht. Toll! Also habe ich mitten im Lockdown eine Weiterbildung zur Web Entwicklerin gemacht und bin nun fertig. ich freue mich anderen zu helfen ihre Ideen in das World Wide Web zu laden! </p>" }
 }
 
-function mittel() {
-    textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
-}
-
-function langeVersion() {
-    textContent.innerHTML = "<p> Diese Magie die passiert wenn man all diese Zeichen und Nummer eingibt. Es sieht aus wie ein Chaos aber am Ende kommt eine wunderschöne Webseite dabei raus. 2018 bin ich zum ersten Mal in die Welt von HTML und CSS eingetaucht und habe stundenlang im Schlafanzug mit Tee und Cracker vor dem Laptop gesessen. Da wusste ich, das ist etwas womit ich meien Lebensunterhalt verdienen will. Ein Job der Spass macht. Toll! Also habe ich mitten im Lockdown eine Weiterbildung zur Web Entwicklerin gemacht und bin nun fertig. ich freue mich anderen zu helfen ihre Ideen in das World Wide Web zu laden! </p>"
-}
 
 // GALLERY
 
@@ -148,15 +150,16 @@ let creating = document.querySelector(".creating")
 let styling = document.querySelector(".styling")
 let cms = document.querySelector(".cms")
 let whatElse = document.querySelector(".whatelse")
-let short = document.getElementById("short")
-let middle = document.getElementById("middle")
-let long = document.getElementById("long")
 let projekteText = document.getElementById("projektetext")
-let bubble = document.querySelector(".bubble")
-let triangle = document.querySelector(".triangle")
 let skills = document.getElementById("whatiknowtitle")
 let projektTitle = document.getElementById("protitle")
 let contactTitle = document.getElementById("titlecontact")
+let gelb1 = document.getElementById("gelb1")
+let gelb2 = document.getElementById("gelb2")
+let gelb3 = document.getElementById("gelb3")
+let gelb4 = document.getElementById("gelb4")
+let gelb5 = document.getElementById("gelb5")
+let gelb6 = document.getElementById("gelb6")
 let isOn = true
 
 function darkMode() {
@@ -174,21 +177,18 @@ function darkMode() {
         whatElse.style.background = "none"
         hero.style.backgroundColor = "#232420"
         nav.style.color = "white"
-        short.style.color = "white"
-        middle.style.color = "white"
-        long.style.color = "white"
         myPro.style.backgroundColor = "#232420"
         projekteText.style.color = "white"
-        bubble.style.color = "white"
-        bubble.style.border = "2px solid white"
-        triangle.style.borderTop = "20px solid white"
-        triangle.style.borderLeft = "20px solid transparent"
-        triangle.style.borderRight = "20px solid transparent"
-        skills.style.color = "#ffe742"
-        projektTitle.style.color = "#ffe742"
         contact.style.backgroundColor = "#232420"
-        contactTitle.style.color = "#ffe742"
-        sendButton.style.backgroundColor = "#ffe742"
+        plane.style.display = "none"
+        gelb1.style.color = "#FFE742"
+        gelb2.style.color = "#FFE742"
+        gelb3.style.color = "#FFE742"
+        gelb4.style.color = "#FFE742"
+        gelb5.style.color = "#FFE742"
+        gelb6.style.color = "#FFE742"
+
+
 
 
     } else {
@@ -204,21 +204,19 @@ function darkMode() {
         whatElse.style.background = ""
         hero.style.backgroundColor = ""
         nav.style.color = ""
-        short.style.color = ""
-        middle.style.color = ""
-        long.style.color = ""
         myPro.style.backgroundColor = ""
         projekteText.style.color = ""
-        bubble.style.color = ""
-        bubble.style.border = ""
-        triangle.style.borderTop = ""
-        triangle.style.borderLeft = ""
-        triangle.style.borderRight = ""
         skills.style.color = ""
         projektTitle.style.color = ""
         contact.style.backgroundColor = ""
         contactTitle.style.color = ""
-        sendButton.style.backgroundColor = ""
+        plane.style.display = ""
+        gelb1.style.color = ""
+        gelb2.style.color = ""
+        gelb3.style.color = ""
+        gelb4.style.color = ""
+        gelb5.style.color = ""
+        gelb6.style.color = ""
     }
 
 }
