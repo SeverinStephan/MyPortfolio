@@ -53,7 +53,6 @@ p{
 /* MAIN */
 
 .hero {
-    min-height: 50vh;
     background-color: #FFE742;
 }
 
@@ -90,11 +89,13 @@ ul li{
 
 main{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
-.maincontent{
-    padding: 14%;
-}
+
 
 .maincontent h2{
     font-size: 1.5em;
@@ -161,7 +162,7 @@ main div h1{
 
 .radio{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 8%;
 }
 
@@ -171,6 +172,8 @@ main div h1{
     color: #78757f;
     font-size: 8px;
     letter-spacing: 3px;
+    margin-right: 21px;
+    margin-left: 5px;
 }
 
 #abouttext{
@@ -272,14 +275,13 @@ main div h1{
     font-size: 1.8em;
     font-weight: lighter;
 }
-/* MY PROJECTS */
 
-.computer{
-    width: 30%;
-    margin: auto;
-    display: block;
-    margin-top: -73px;
+.codepic{
+    background: url(./img/game.png)center/cover no-repeat fixed;
+    height: 50vh;
 }
+
+/* MY PROJECTS */
 
 #protitle{
     font-size: 2.5em;
@@ -311,42 +313,36 @@ main div h1{
 }
 
 
-
-
-/* CONTACT */
-
 .lastpic{
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid lightblue;
-    display: block;
-    margin: auto;
-    margin-bottom: 43%;
-    margin-bottom: -174px;
+    height: 50vh;
+    background: url(./img/hello.png)center/cover no-repeat fixed;
 }
 
+/* CONTACT */
 
 #contact{
     background-color: #FFE742;
     text-align: center;
-    padding-top: 1%;
     padding-bottom: 200px;
     border-top: 3px solid pink;
 }
 
 .contacttitle{
     font-size: 1.4em;
-    margin-bottom: 9%;
-    margin-top: 190px;
+    margin-top: 50px;
 }
 
 .contacttitle h3{
     font-family: MallorySmall;
     font-size: 0.8em;
-    padding: 4%;
+    padding: 2%;
     font-weight: lighter;
+}
+
+.meglasses{
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
 
  #contact form{
@@ -522,21 +518,13 @@ label:active:after {
 
 @media screen and (min-width:768px ){
 
-    .hero{
-        min-height: 100vh;
-    }
-
-    .maincontent{
-        padding: 6%;
-    }
-
     main div h1 {
-        font-size: 170px;
+        font-size: 5em;
     }
 
     .lastname{
-        width: 600px;
-        font-size: 140px;
+        width: 350px;
+        font-size: 5em;
     }
 
     article{
@@ -547,11 +535,6 @@ label:active:after {
     #chosenpic{
         width: 90%;
         margin-top: 10%;
-    }
-
-    .computer{
-        width: 20%;
-        margin-top: -100px;
     }
 
     .skills{
@@ -581,13 +564,11 @@ label:active:after {
         font-size: 4em;
     }
 
-    .lastpic{
-        width: 300px;
-        margin-bottom: -17%;
+    .meglasses{
+        width: 20%;
     }
 
     .contacttitle h3{
-        width: 550px;
         margin: auto;
     }
 
@@ -629,22 +610,20 @@ label:active:after {
         height: 90px;
     }
 
-    #contact h3{
-        font-size: 1em;
+    .contacttitle h1{
+        font-size: 3em;
     }
 
-    .computer{
-        margin-top: -128px;
-    }
-    
+    #contact h3{
+        font-size: 1em;
+    }    
 
 }
 
 @media screen and (min-width:1068px ){
-    
-
+   
     .maincontent h2{
-        font-size: 3.5em;
+        font-size: 2em;
     }
 
     .me{
@@ -688,14 +667,9 @@ label:active:after {
         padding-bottom: 90px;
     }
 
-    #titlecontact{
-        font-size: 3em;
+    .contacttitle h1 {
+        font-size: 4em;
     }
-
-    .contacttitle{
-        margin-bottom: 20px;
-    }
-
 }
 
 
@@ -709,11 +683,7 @@ label:active:after {
     }
 
     .contacttitle{
-        margin-top: 235px;
-    }
-
-    .lastpic{
-        margin-bottom: -14%;
+        margin-top: 80px;
     }
 
     #mypro p{
@@ -724,8 +694,16 @@ label:active:after {
 
 @media screen and (min-width:1400px ){
 
-    .maincontent{
-        padding: 3%;
+    main{
+        height: 65vh;
+    }
+
+    .maincontent h1{
+        font-size: 7em;
+    }
+
+    .lastname{
+        width: 485px;
     }
 
     #chosenpic{
@@ -751,20 +729,12 @@ label:active:after {
         font-size: 2em;
     }
 
-    .contacttitle h3{
-        width: 700px;
-    }
-
     #contact h3{
         font-size: 1.5em;
     }
 
     article{
         grid-template-columns: 1fr 800px;
-    }
-
-    .lastpic {
-        margin-bottom: -11%;
     }
 
     #send{
