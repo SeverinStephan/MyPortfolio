@@ -331,8 +331,9 @@ main div h1{
 }
 
 .contacttitle h3{
-    font-family: MallorySmall;
+    font-family: MallorySmall, 'Lato', sans-serif;
     font-size: 0.8em;
+    font-weight: lighter;
     padding: 2%;
 }
 
