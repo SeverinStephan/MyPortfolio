@@ -24,11 +24,25 @@ font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .darkmode{
     background-color: #232420;
     color: white;
     transition: all 1s;
 }
+
+.totop{
+    position: absolute;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    transform: rotate(90deg);
+    width: 60px;
+}
+
 
 
 h1,h3{
@@ -218,48 +232,18 @@ main div h1{
 /* WHAT I KNOW */
 
 
-
-.creating{
-    background: url(./img/yellow.png) center/cover no-repeat;
-    padding-bottom: 8%;
-    transition: all 1s;
-    background-size: 300px;
-}
-
-.styling{
-    background: url(./img/green.png) center/cover no-repeat;
-    padding-bottom: 13%;
-    transition: all 1s;
-    background-size: 300px;
-}
-
-.cms{
-    background: url(./img/blue.png) center/cover no-repeat;
-    padding-bottom: 18%;
-    transition: all 1s;
-    background-size: 300px;
-}
-
-.whatelse{
-    background: url(./img/pink.png) center/cover no-repeat;
-    padding-bottom: 18%;
-    transition: all 1s;
-    background-size: 300px;
-}
-
 #whatiknow{
-    padding-bottom: 10%;
+    padding-bottom: 70px;
 }
 
 #whatiknow h1{
     text-align: center;
     font-size: 3em;
-    margin-top: 15%;
+    margin: 9% 0;
 }
 
 .skills{
     font-size: 1em;
-    padding: 10%;
 }
 
 .skills div li{
@@ -275,10 +259,36 @@ main div h1{
     font-weight: lighter;
 }
 
-.codepic{
+.creating h2{
+    color: #FA314A;
+    font-weight: bolder;
+}
+
+.styling h2{
+    color: #FFE742;
+    font-weight: bolder;
+}
+
+.cms h2{
+    color: #87FFFB;
+    font-weight: bolder;
+}
+
+.codepic::before{
     background: url(./img/game.png)center/cover no-repeat fixed;
     height: 50vh;
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+
 
 /* MY PROJECTS */
 
@@ -379,7 +389,7 @@ textarea::placeholder{
 }
 
   #send{
-    background-color: pink;
+    background-color: #FA314A;
     min-width: 130px;
     min-height: 40px;
     margin-top: 16px;
@@ -537,14 +547,23 @@ label:active:after {
 
     .skills{
         display: flex;
-        justify-content: space-between;
-        padding: 8%;
+        justify-content: space-evenly;
         padding-top: 0;
+        padding-bottom: 70px;
     }
 
-    .skills div{
-        background-size: 200px;
-        padding-top: 5%;
+    .skills div h2{
+        margin: 0;
+        text-align: left;
+    }
+
+    .skills div li{
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #whatiknow{
+        padding: 0;
     }
 
     #whatiknow h1{
@@ -594,6 +613,10 @@ label:active:after {
 
 @media screen and (min-width:1000px ){
 
+    .totop{
+        right: 66px;
+    }
+
     nav a{
         font-size: 1em;
     }
@@ -616,10 +639,6 @@ label:active:after {
         font-size: 1.5;
     }
 
-    .meglasses{
-        width: 25%;
-    }
-
     .titlecontact{
         font-size: 3em;
     }
@@ -632,6 +651,20 @@ label:active:after {
     #contact h3{
         font-size: 1em;
     }    
+
+    .lastwrapper{
+        display: grid;
+        gap: 14rem;
+        grid-template-columns: 61px 1fr;
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .meglasses{
+        width: 289px;
+    }
+
 
 }
 
@@ -709,6 +742,11 @@ label:active:after {
 
 @media screen and (min-width:1400px ){
 
+    .totop{
+        right: 100px;
+        width: 80px;
+    }
+
     main{
         height: 65vh;
     }
@@ -732,6 +770,10 @@ label:active:after {
 
     nav a{
         font-size: 1.5em;
+    }
+
+    #whatiknow{ 
+        padding-bottom: 10%;
     }
 
     .skills div h2{
@@ -765,6 +807,16 @@ label:active:after {
         min-width: 160px;
         min-height: 60px;
         font-size: 20px;
+    }
+
+    .lastwrapper{
+        grid-template-columns: 135px 1fr;
+        gap: 9rem;
+        width: 64%;
+    }
+
+    .meglasses{
+        width: 350px;
     }
     
 }
@@ -873,10 +925,6 @@ label:active:after {
         font-size: 2.5em;
     }
 
-    .skills div {
-        background-size: 555px;
-    }
-
     #protitle {
         font-size: 11em;
     }
@@ -894,4 +942,31 @@ label:active:after {
         font-size: 2em;
     }
 
+}
+
+@media screen and (min-width:2560px ){
+
+    .totop{
+        right: 185px;
+        width: 140px;
+        bottom: 90px;
+    }
+
+    .meglasses{
+        width: 600px;
+    }
+
+    .lastwrapper{
+        gap: 0;
+        margin-left: 470px;
+        width: 88%;
+    }
+
+    #mypro{
+        padding: 10% 0;
+    }
+
+    .contacttitle{
+        margin-top: 180px;
+    }
 }
