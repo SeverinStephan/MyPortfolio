@@ -137,23 +137,17 @@ function flyAway() {
 // DARKMODE
 
 let body = document.getElementById("darkmode")
-let hero = document.querySelector("section")
-let nav = document.querySelector("a")
-let contact = document.getElementById("contact")
-let sendButton = document.getElementById("send")
+let hero = document.querySelector("main")
+let white = document.querySelector(".white")
 let myPro = document.getElementById("mypro")
-let myButton1 = document.querySelector(".button1")
-let hey = document.getElementById("hey")
 let sun = document.getElementById("sun")
 let moon = document.getElementById("moon")
-let creating = document.querySelector(".creating")
-let styling = document.querySelector(".styling")
-let cms = document.querySelector(".cms")
-let whatElse = document.querySelector(".whatelse")
-let projekteText = document.getElementById("projektetext")
+let contact = document.getElementById("contact")
 let skills = document.getElementById("whatiknowtitle")
 let projektTitle = document.getElementById("protitle")
 let contactTitle = document.getElementById("titlecontact")
+let unterTitel = document.getElementById("untertitel")
+let aboutSeverin = document.getElementById("aboutseverin")
 let gelb1 = document.getElementById("gelb1")
 let gelb2 = document.getElementById("gelb2")
 let gelb3 = document.getElementById("gelb3")
@@ -167,19 +161,18 @@ function darkMode() {
     isOn = isOn ? false : true;
     if (isOn === false) {
         body.classList.add("darkmode")
+        hero.classList.add("darkmode")
+        myPro.style.backgroundColor = "#232420"
+        white.style.color = "white"
+        contact.style.backgroundColor = "#232420"
+        skills.style.color = "white"
+        projektTitle.style.color = "white"
+        unterTitel.style.color = "white"
+        aboutSeverin.style.color = "#FFE742"
         sun.style.opacity = "0"
         moon.style.opacity = "1"
         moon.style.bottom = "69%"
         sun.style.bottom = "-45%"
-        creating.style.background = "none"
-        styling.style.background = "none"
-        cms.style.background = "none"
-        whatElse.style.background = "none"
-        hero.style.backgroundColor = "#232420"
-        nav.style.color = "white"
-        myPro.style.backgroundColor = "#232420"
-        projekteText.style.color = "white"
-        contact.style.backgroundColor = "#232420"
         plane.style.display = "none"
         gelb1.style.color = "#FFE742"
         gelb2.style.color = "#FFE742"
@@ -188,28 +181,21 @@ function darkMode() {
         gelb5.style.color = "#FFE742"
         gelb6.style.color = "#FFE742"
 
-
-
-
     } else {
         body.classList.remove("darkmode")
         body.style.transition = "all 1s"
+        hero.classList.remove("darkmode")
+        white.style.color = ""
+        myPro.style.backgroundColor = ""
+        contact.style.backgroundColor = ""
+        skills.style.color = ""
+        projektTitle.style.color = ""
+        unterTitel.style.color = ""
+        aboutSeverin.style.color = ""
         sun.style.bottom = "40%"
         moon.style.bottom = "-5%"
         sun.style.opacity = "1"
         moon.style.opacity = "0"
-        creating.style.background = ""
-        styling.style.background = ""
-        cms.style.background = ""
-        whatElse.style.background = ""
-        hero.style.backgroundColor = ""
-        nav.style.color = ""
-        myPro.style.backgroundColor = ""
-        projekteText.style.color = ""
-        skills.style.color = ""
-        projektTitle.style.color = ""
-        contact.style.backgroundColor = ""
-        contactTitle.style.color = ""
         plane.style.display = ""
         gelb1.style.color = ""
         gelb2.style.color = ""

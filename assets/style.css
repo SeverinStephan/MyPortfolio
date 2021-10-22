@@ -43,24 +43,53 @@ html{
     width: 60px;
 }
 
-
-
-h1,h3{
+h1,h2,h3{
     font-family: Mallory, 'Lato', sans-serif;
+    color: #232420;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #78757f;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
 body{
-    color: #232420;
-    font-family: MallorySmall, 'Lato', sans-serif; 
     position: relative;
 }
 
 a{
     text-decoration: none;
+    color:white ;
+    font-size: 0.7em;
+    font-weight: bolder;
 }
 
 p{
-    color: #78757f;;;
+    color: #78757f;
+    font-size: 1.1em;
+    font-family: MallorySmall, 'Lato', sans-serif;
+    text-align: center; 
+}
+
+li{
+    font-family: MallorySmall, 'Lato', sans-serif; 
+    list-style: none;
+    text-align: center;
+    font-size: 1em;
 }
 
 
@@ -68,12 +97,6 @@ p{
 
 .hero {
     background-color: #FFE742;
-}
-
-nav a{
-    color:white ;
-    font-size: 0.7em;
-    font-weight: bolder;
 }
 
 nav {
@@ -102,28 +125,16 @@ ul li{
 }
 
 main{
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
 }
 
-
-
-.maincontent h2{
-    font-size: 1.5em;
-    font-family: Mallory, 'Lato', sans-serif;
-}
-
-main div h1{
-    font-size: 3em;
-}
-
 .lastname{
     background-color: #232420;
     color: #FFE742;
-    width: 210px;
+    width: 5em;
     margin: auto;
 }
 
@@ -145,33 +156,8 @@ main div h1{
 /* ABOUT ME */
 
 #aboutmesection{
-    scroll-behavior: smooth;
     padding: 5%;
     margin-top: 25px;
-}
-
-#aboutmesection h1{
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-}
-
-#aboutmesection h2{
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color:#78757f;
-    font-size: 12px;
-    letter-spacing: 3px;
-}
-
-#aboutmesection h3{
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #78757f;
-    font-size: 12px;
-    letter-spacing: 3px;
 }
 
 .radio{
@@ -183,7 +169,6 @@ main div h1{
 .radio p{
     font-weight: bolder;
     text-transform: uppercase;
-    color: #78757f;
     font-size: 8px;
     letter-spacing: 3px;
     margin-right: 21px;
@@ -191,8 +176,6 @@ main div h1{
 }
 
 #abouttext{
-    font-size:1.1em;
-    text-align: center;
     margin-bottom: 15%;
     padding: 7%;
 }
@@ -205,17 +188,8 @@ main div h1{
     padding: 5%;
 }
 
-.portrait p{
-    text-align: center;
-}
-
 .portrait h3{
-    text-align: center;
     font-weight: bolder;
-    text-transform: uppercase;
-    color: #78757f;
-    font-size: 12px;
-    letter-spacing: 3px;
     margin-bottom: 25px;
 }
 
@@ -237,26 +211,11 @@ main div h1{
 }
 
 #whatiknow h1{
-    text-align: center;
-    font-size: 3em;
     margin: 9% 0;
-}
-
-.skills{
-    font-size: 1em;
-}
-
-.skills div li{
-    list-style: none;
-    text-align: center;
-    font-size: 1em;
 }
 
 .skills div h2{
     margin: 5%;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: lighter;
 }
 
 .creating h2{
@@ -274,32 +233,19 @@ main div h1{
     font-weight: bolder;
 }
 
-.codepic::before{
+.codepic{
     background: url(./img/game.png)center/cover no-repeat fixed;
     height: 50vh;
-    content: "";
-    display: block;
-    left: 0;
-    top: 0;
-    z-index: -10;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
-
 
 
 /* MY PROJECTS */
 
 #protitle{
-    font-size: 2.5em;
-    text-align: center;
     margin-top: 30px;
 }
 
 #mypro p{
-    text-align: center;
     padding: 3%;
 }
 
@@ -330,27 +276,23 @@ main div h1{
 
 #contact{
     background-color: #FFE742;
-    text-align: center;
     padding-bottom: 200px;
     border-top: 3px solid pink;
 }
 
 .contacttitle{
-    font-size: 1.4em;
     margin-top: 50px;
 }
 
-.contacttitle h3{
-    font-family: MallorySmall, 'Lato', sans-serif;
-    font-size: 0.8em;
-    font-weight: lighter;
-    padding: 2%;
+#contact p{
+    padding: 4%;
 }
 
 .meglasses{
-    width: 80%;
+    width: 60%;
     border-radius: 50%;
-    padding: 10%;
+    display: block;
+    margin: 20px auto;
 }
 
  #contact form{
@@ -390,15 +332,13 @@ textarea::placeholder{
 
   #send{
     background-color: #FA314A;
-    min-width: 130px;
-    min-height: 40px;
+    width: 130px;
+    height: 40px;
     margin-top: 16px;
     transition: all 250ms;
     border-radius: 10px;
     transition: all 0.5s;
   }
-
-  
 
   form input{
       border: 1px solid #232420;
@@ -414,6 +354,17 @@ textarea::placeholder{
     animation: move 1s forwards ease-in-out;
   }
 
+  @keyframes move{
+    0% {
+        transform: scale(1);
+        offset-distance: 0%;
+    }
+    100% {
+        transform: scale(0);
+        offset-distance: 100%;
+    }
+  }
+
   .sendwrapper{
     display: flex;
     justify-content: center;
@@ -422,23 +373,20 @@ textarea::placeholder{
 
 
   #plane{
-    max-width: 153px;
+    max-width: 145px;
     offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
     position: absolute;
     left: 67%;
     bottom: 10%;
 }
 
-@keyframes move{
-  0% {
-      transform: scale(1);
-      offset-distance: 0%;
-  }
-  100% {
-      transform: scale(0);
-      offset-distance: 100%;
-  }
+.madeby{
+    position:absolute ;
+    bottom: 10px;
+    left: 10px;
 }
+
+
 
 /* DARKMODE */
 #cat{
@@ -526,13 +474,8 @@ label:active:after {
 
 @media screen and (min-width:768px ){
 
-    main div h1 {
-        font-size: 5em;
-    }
-
-    .lastname{
-        width: 350px;
-        font-size: 5em;
+    h1 {
+        font-size: 4em;
     }
 
     article{
@@ -566,35 +509,14 @@ label:active:after {
         padding: 0;
     }
 
-    #whatiknow h1{
-        font-size: 5em;
-    }
 
     #mypro p{
-        font-size: 1.5em;
-        width: 87%;
+        width: 71%;
         margin: auto;
-        padding: 0;
-    }
-
-
-    #protitle{
-        font-size: 4em;
     }
 
     .meglasses{
-        width: 36%;
-        padding: 2%;
-    }
-
-    .titlecontact{
-        font-size: 2em;
-    }
-
-    .contacttitle h3{
-        margin: auto;
-        padding: 0;
-        width: 79%;
+        width: 34%;
     }
 
     #contact form textarea:first-of-type{
@@ -613,6 +535,14 @@ label:active:after {
 
 @media screen and (min-width:1000px ){
 
+    h1{
+        font-size: 5em;
+    }
+
+    p{
+        font-size: 1.3em;
+    }
+
     .totop{
         right: 66px;
     }
@@ -621,9 +551,8 @@ label:active:after {
         font-size: 1em;
     }
 
-    #contact form{
-        width: 90%;
-        margin: auto;
+    #mypro p {
+        padding: 1% 1%;
     }
 
     #propics{
@@ -635,22 +564,14 @@ label:active:after {
         margin: 2%;
     }
 
-    #mypro p{
-        font-size: 1.5;
+    #contact form{
+        width: 90%;
+        margin: auto;
     }
 
-    .titlecontact{
-        font-size: 3em;
+    #contact p{
+        padding: 1% 17%;
     }
-
-
-    .contacttitle h1{
-        font-size: 3em;
-    }
-
-    #contact h3{
-        font-size: 1em;
-    }    
 
     .lastwrapper{
         display: grid;
@@ -665,13 +586,27 @@ label:active:after {
         width: 289px;
     }
 
+    #titlecontact{
+        font-size: 4em;
+    }
 
+    #contact .madeby{
+        padding: 0 0;
+    }
 }
 
 @media screen and (min-width:1068px ){
    
-    .maincontent h2{
-        font-size: 2em;
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 1.7em;
+    }
+
+    p{
+        font-size: 1.2em;
     }
 
     .me{
@@ -679,7 +614,6 @@ label:active:after {
     }
 
     #whatiknow h1{
-        font-size: 8em;
         margin-top: 110px;
     }
 
@@ -687,36 +621,16 @@ label:active:after {
         padding-bottom: 0;
     }
 
-    #aboutmesection h1{
-        font-size: 2.5em;
-    }
-
-    #aboutmesection h2{
-        font-size: 14px;
-    }
-
-    .radio p{
-        font-size: 16px;
-    }
-
-    #abouttext{
-        font-size: 1.5em;
-    }
-
-    .skills div li{
-        font-size: 1.5em;
-    }
-
-    #protitle{
-        font-size: 8em;
+    #whatiknow h1{
+        margin: 5% 0;
     }
 
     #mypro{
         padding-bottom: 90px;
     }
 
-    .contacttitle h1 {
-        font-size: 4em;
+    #mypro p{
+        padding: 1% 7%;
     }
 }
 
@@ -724,7 +638,25 @@ label:active:after {
 
 @media screen and (min-width:1115px ){
 
+    h1{
+        font-size: 7em;
+    }
 
+    h2{
+        font-size: 2.2em;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 1.4em;
+    }
+
+    .radio p{
+        font-size: 15px;
+    }
 
     #contact form{
         width: 70%;
@@ -734,13 +666,17 @@ label:active:after {
         margin-top: 80px;
     }
 
-    #mypro p{
-        width: 500px;
-    }
-
 }
 
 @media screen and (min-width:1400px ){
+
+    h2{
+        font-size: 2.8em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
 
     .totop{
         right: 100px;
@@ -749,14 +685,6 @@ label:active:after {
 
     main{
         height: 65vh;
-    }
-
-    .maincontent h1{
-        font-size: 7em;
-    }
-
-    .lastname{
-        width: 485px;
     }
 
     #chosenpic{
@@ -776,31 +704,16 @@ label:active:after {
         padding-bottom: 10%;
     }
 
-    .skills div h2{
-        font-size: 2.8em;
-    }
-
     #propics img{
-        max-width: 28%;
-    }
-
-
-    #mypro p{
-        width: 59%;
-        font-size: 2em;
-    }
-
-    .titlecontact{
-        font-size: 4em;
-    }
-
-
-    #contact h3{
-        font-size: 1.5em;
+        width: 25%;
     }
 
     article{
         grid-template-columns: 1fr 800px;
+    }
+
+    #titlecontact{
+        font-size: 5em;
     }
 
     #send{
@@ -818,38 +731,53 @@ label:active:after {
     .meglasses{
         width: 350px;
     }
+
+    #plane{
+        left: 85%;
+    }
     
 }
 
 @media screen and (min-width:1672px ){
-    .maincontent {
-        padding: 18%;
+    
+    h1 {
+        font-size: 9em;
     }
 
-    #aboutmesection h1 {
-        font-size: 5em;
+    h2{
+        font-size: 4em;
     }
 
-    #aboutmesection h2 {
-        font-size: 29px;
+    h3{
+        font-size: 1.5em;
+    }
+
+    p, li{
+        font-size: 2em;
     }
 
     .radio p {
         font-size: 25px;
     }
 
-    #aboutmesection h3{
-        font-size: 27px;
+    .social img {
+        width: 90px;
     }
 
-    .portrait h3{
-        font-size: 27px;
+    #titlecontact {
+        font-size: 6.5em;
     }
 
-    .titlecontact{
-        font-size: 7em;
+    .meglasses {
+        width: 450px;
     }
 
+    .lastwrapper {
+        grid-template-columns: 31px 1fr;
+        gap: 0rem;
+        width: 134%;
+        padding: 0px 11%;
+    }
 
     #contact form textarea:first-of-type {
         min-width: 70%;
@@ -863,37 +791,42 @@ label:active:after {
         min-width: 70%;
     }
 
+    textarea {
+        font-size: 1.5em;
+    }
+
     #send {
         min-width: 250px;
         min-height: 60px;
         font-size: 25px;
     }
+
+    #plane {
+        left: 67%;
+        max-width: 196px;
+    }
+    .totop {
+        right: 650px;
+        width: 100px;
+    }
 }
 
 @media screen and (min-width:2000px ){
 
-    .maincontent h1 {
-        font-size: 15em;
+    h1 {
+        font-size: 12em;
+    }
+    
+    h2 {
+        font-size: 4em;
     }
 
-    .lastname {
-        width: 4.5em;
-    }
-
-    .maincontent h2 {
-        font-size: 5em;
-    }
-
-    #aboutmesection h1 {
-        font-size: 7em;
-    }
-
-    #aboutmesection h2 {
-        font-size: 36px;
+    p{
+        font-size: 2.5em;
     }
 
     .radio p {
-        font-size: 37px;
+        font-size: 2em;
     }
 
     article {
@@ -904,63 +837,57 @@ label:active:after {
         width: 69%;
     }
 
-    #aboutmesection h3 {
-        font-size: 35px;
-    }
-
     .social img {
         width: 100px;
     }
 
     #whatiknow h1 {
-        font-size: 11em;
         margin-top: 150px;
     }
 
-    .skills div h2 {
-        font-size: 4.8em;
-    }
-
-    .skills div li {
+    li {
         font-size: 2.5em;
     }
 
-    #protitle {
-        font-size: 11em;
+    #titlecontact{
+        font-size: 8em;
     }
 
-    #mypro p {
-        width: 60%;
-        font-size: 4em;
+    .totop {
+        right: 700px;
+        width: 130px;
     }
-
-    .contacttitle h1 {
-        font-size: 7em;
-    }
-
-    #contact h3 {
-        font-size: 2em;
-    }
-
 }
 
 @media screen and (min-width:2560px ){
 
+    h1{
+        font-size: 14em;
+    }
+
+    h2{
+        font-size: 5em;
+    }
+
+    h3{
+        font-size: 2.5em;
+    }
+
+    p{
+        font-size: 3em;
+    }
+
     .totop{
-        right: 185px;
-        width: 140px;
-        bottom: 90px;
+        right: 27%;
+        width: 180px;
+        bottom: 50px;
     }
 
     .meglasses{
         width: 600px;
     }
 
-    .lastwrapper{
-        gap: 0;
-        margin-left: 470px;
-        width: 88%;
-    }
+    
 
     #mypro{
         padding: 10% 0;
