@@ -48,7 +48,7 @@
     <article>
         <section id="aboutmesection">
             <h2 id="aboutseverin">About Severin:</h2>
-            <p>Wieviel willst Du wissen? <br> Wähle aus zwischen:</p>
+            <p class="wannaknow">Wieviel willst Du wissen? <br> Wähle aus zwischen:</p>
             <div class="radio">
                 <input type="radio" id="kurz" name="text" value="kurz" onclick="showText()">
                 <p id="short">kurz</p>
@@ -158,7 +158,8 @@
             <h1 id="titlecontact">
                 Wenn nicht <span id="gelb6">jetzt</span>, wann dann?
             </h1>
-            <p>Was Du heute kannst besorgen......und so weiter. Zusammen schaffen wir das, ich helfe Dir mit
+            <p id="motivation">Was Du heute kannst besorgen......und so weiter. Zusammen schaffen wir das, ich helfe Dir
+                mit
                 Deinem Business Projekt, Blog oder Portfolio.Schreib mir eine Nachricht und ich melde mich
                 schnellstmöglich zurück. </p>
         </div>
@@ -168,7 +169,7 @@
             <form action="" method="POST">
                 <textarea type="text" placeholder="Name" onclick="this.value=' '"></textarea>
                 <textarea type="email" placeholder="Email" onclick="this.value=' '"></textarea> <br>
-                <textarea type="text" placeholder="Deine Nachricht" onclick="this.value=' '"></textarea>
+                <textarea type="text" placeholder="Nachricht" onclick="this.value=' '"></textarea>
                 <br>
                 <div class="sendwrapper">
                     <input type="button" name="send" id="send" value="Ab die Post" onclick="flyAway()">

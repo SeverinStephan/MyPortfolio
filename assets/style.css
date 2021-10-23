@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Work+Sans&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
-/* font-family: 'Didact Gothic', sans-serif;
-font-family: 'Work Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+/* 
 font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
 /* colors: text: #232420 */
 /* #8BC5D7 #DACDFB*/
 
@@ -44,12 +43,13 @@ html{
 }
 
 h1,h2,h3{
-    font-family: Mallory, 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #232420;
+    line-height: 1em;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
 }
 
@@ -80,16 +80,18 @@ a{
 
 p{
     color: #78757f;
-    font-size: 1.1em;
-    font-family: MallorySmall, 'Lato', sans-serif;
-    text-align: center; 
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+   
+    letter-spacing: 1px; 
 }
 
 li{
-    font-family: MallorySmall, 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif; 
     list-style: none;
     text-align: center;
     font-size: 1em;
+    letter-spacing: 1px;
 }
 
 
@@ -160,6 +162,11 @@ main{
     margin-top: 25px;
 }
 
+.wannaknow
+{
+    text-align: center;
+}
+
 .radio{
     display: flex;
     justify-content: center;
@@ -175,9 +182,10 @@ main{
     margin-left: 5px;
 }
 
-#abouttext{
+ #abouttext{
     margin-bottom: 15%;
     padding: 7%;
+    text-align: justify;
 }
 
 #chosenpic{
@@ -245,8 +253,13 @@ main{
     margin-top: 30px;
 }
 
+#projektetext{
+    color: #232420;
+}
+
 #mypro p{
     padding: 3%;
+    text-align: center;
 }
 
 #propics{
@@ -284,8 +297,14 @@ main{
     margin-top: 50px;
 }
 
+#titlecontact{
+    font-size: 2.9em;
+}
+
 #contact p{
     padding: 4%;
+    text-align: justify;
+    color: #232420;
 }
 
 .meglasses{
@@ -301,7 +320,7 @@ main{
  }
 
  #contact form textarea{
-    font-family: MallorySmall;
+    font-family: 'Lato', sans-serif;
  }
 
  #contact form textarea:first-of-type{
@@ -470,12 +489,32 @@ label:active:after {
     padding-top: 15px;
 }
 
+input[type="radio"]{
+    background-color: black;
+}
+
+.codepic{
+    display: none;
+}
+
+.lastpic{
+    display: none;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px ){
 
+    p{
+        font-size: 1.1em;
+    }
+
     h1 {
-        font-size: 4em;
+        font-size: 5em;
+    }
+
+    h2{
+        font-size: 2em;
     }
 
     article{
@@ -519,6 +558,10 @@ label:active:after {
         width: 34%;
     }
 
+    #contact p{
+        padding: 1% 17%;
+    }
+
     #contact form textarea:first-of-type{
         min-width: 500px;
     }
@@ -540,7 +583,7 @@ label:active:after {
     }
 
     p{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .totop{
@@ -592,6 +635,14 @@ label:active:after {
 
     #contact .madeby{
         padding: 0 0;
+    }
+
+    .codepic{
+        display: block;
+    }
+    
+    .lastpic{
+        display: block;
     }
 }
 
@@ -651,7 +702,7 @@ label:active:after {
     }
 
     p{
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .radio p{
@@ -675,6 +726,10 @@ label:active:after {
     }
 
     p{
+        font-size: 1.3em;
+    }
+
+    li{
         font-size: 1.5em;
     }
 
@@ -694,10 +749,6 @@ label:active:after {
 
     #contact form{
         width: 60%;
-    }
-
-    nav a{
-        font-size: 1.5em;
     }
 
     #whatiknow{ 
@@ -874,7 +925,7 @@ label:active:after {
     }
 
     p{
-        font-size: 3em;
+        font-size:3em;
     }
 
     .totop{

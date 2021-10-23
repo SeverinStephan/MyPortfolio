@@ -1,20 +1,3 @@
-
-// TOTOP Button
-
-//let toTop = document.getElementById("totop")
-
-//toTop.addEventListener("click", function () {
-
-// window.scrollTo({
-//      top: 0,
-//      left: 0,
-//       behavior: "smooth"
-//  })
-
-//})
-
-// ABOUTME
-
 let textContent = document.getElementById("abouttext")
 let kurz = document.getElementById("kurz")
 let mittel = document.getElementById("mittel")
@@ -24,6 +7,7 @@ let lang = document.getElementById("lang")
 function showText() {
     if (kurz.checked) {
         textContent.innerHTML = "<p> Ich mache super tolle Webseiten!</p>"
+
     }
     else if (mittel.checked) {
         textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
@@ -148,6 +132,8 @@ let projektTitle = document.getElementById("protitle")
 let contactTitle = document.getElementById("titlecontact")
 let unterTitel = document.getElementById("untertitel")
 let aboutSeverin = document.getElementById("aboutseverin")
+let motivation = document.getElementById("motivation")
+let projekteText = document.getElementById("projektetext")
 let gelb1 = document.getElementById("gelb1")
 let gelb2 = document.getElementById("gelb2")
 let gelb3 = document.getElementById("gelb3")
@@ -169,6 +155,8 @@ function darkMode() {
         projektTitle.style.color = "white"
         unterTitel.style.color = "white"
         aboutSeverin.style.color = "#FFE742"
+        motivation.style.color = "white"
+        projekteText.style.color = "white"
         sun.style.opacity = "0"
         moon.style.opacity = "1"
         moon.style.bottom = "69%"
@@ -192,6 +180,8 @@ function darkMode() {
         projektTitle.style.color = ""
         unterTitel.style.color = ""
         aboutSeverin.style.color = ""
+        motivation.style.color = ""
+        projekteText.style.color = ""
         sun.style.bottom = "40%"
         moon.style.bottom = "-5%"
         sun.style.opacity = "1"
