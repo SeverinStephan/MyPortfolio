@@ -352,11 +352,12 @@ textarea::placeholder{
   #send{
     background-color: #FA314A;
     width: 130px;
-    height: 40px;
+    height: 60px;
     margin-top: 16px;
-    transition: all 250ms;
     border-radius: 10px;
     transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
   }
 
   form input{
@@ -384,19 +385,11 @@ textarea::placeholder{
     }
   }
 
-  .sendwrapper{
-    display: flex;
-    justify-content: center;
-    position:relative;
-  }
-
 
   #plane{
     max-width: 145px;
     offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
-    position: absolute;
-    left: 67%;
-    bottom: 10%;
+    
 }
 
 .madeby{
@@ -505,10 +498,6 @@ input[type="radio"]{
 
 @media screen and (min-width:768px ){
 
-    p{
-        font-size: 1.1em;
-    }
-
     h1 {
         font-size: 5em;
     }
@@ -582,16 +571,22 @@ input[type="radio"]{
         font-size: 5em;
     }
 
-    p{
-        font-size: 1.1em;
-    }
-
     .totop{
         right: 66px;
     }
 
     nav a{
         font-size: 1em;
+        transition: all 0.8s;
+    }
+
+    nav a:hover{
+        color: pink;
+        transition: all 0.5s;
+    }
+
+    input{
+        cursor: pointer;
     }
 
     #mypro p {
@@ -605,11 +600,13 @@ input[type="radio"]{
     #propics img{
         max-width: 25%;
         margin: 2%;
+        transition: all 0.5s;
     }
 
-    #contact form{
-        width: 90%;
-        margin: auto;
+    #propics img:hover{
+        -webkit-box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.40); 
+        box-shadow: 8px 5px 26px 11px rgba(0,0,0,0.40);
+        transition: all 0.5s;
     }
 
     #contact p{
@@ -618,7 +615,7 @@ input[type="radio"]{
 
     .lastwrapper{
         display: grid;
-        gap: 14rem;
+        gap: 16rem;
         grid-template-columns: 61px 1fr;
         width: 80%;
         margin: auto;
@@ -627,10 +624,11 @@ input[type="radio"]{
 
     .meglasses{
         width: 289px;
+        margin: 0;
     }
 
     #titlecontact{
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     #contact .madeby{
@@ -654,10 +652,6 @@ input[type="radio"]{
 
     h2{
         font-size: 1.7em;
-    }
-
-    p{
-        font-size: 1.2em;
     }
 
     .me{
@@ -701,16 +695,8 @@ input[type="radio"]{
         font-size: 16px;
     }
 
-    p{
-        font-size: 1.2em;
-    }
-
     .radio p{
         font-size: 15px;
-    }
-
-    #contact form{
-        width: 70%;
     }
 
     .contacttitle{
@@ -725,8 +711,9 @@ input[type="radio"]{
         font-size: 2.8em;
     }
 
-    p{
-        font-size: 1.3em;
+    #projektetext, #motivation, #abouttext
+    {
+        font-size: 1.5em;
     }
 
     li{
@@ -745,10 +732,6 @@ input[type="radio"]{
     #chosenpic{
         width: 60%;
         margin-top: 5%;
-    }
-
-    #contact form{
-        width: 60%;
     }
 
     #whatiknow{ 
@@ -775,16 +758,12 @@ input[type="radio"]{
 
     .lastwrapper{
         grid-template-columns: 135px 1fr;
-        gap: 9rem;
+        gap: 17rem;
         width: 64%;
     }
 
     .meglasses{
         width: 350px;
-    }
-
-    #plane{
-        left: 85%;
     }
     
 }
@@ -815,8 +794,16 @@ input[type="radio"]{
         width: 90px;
     }
 
+    #mypro p{
+        font-size: 2em;
+    }
+
     #titlecontact {
         font-size: 6.5em;
+    }
+
+    #contact p{
+        font-size: 2em;
     }
 
     .meglasses {
@@ -825,8 +812,8 @@ input[type="radio"]{
 
     .lastwrapper {
         grid-template-columns: 31px 1fr;
-        gap: 0rem;
-        width: 134%;
+        gap: 22rem;
+        width: 110%;
         padding: 0px 11%;
     }
 
@@ -848,17 +835,17 @@ input[type="radio"]{
 
     #send {
         min-width: 250px;
-        min-height: 60px;
-        font-size: 25px;
+        min-height: 100px;
+        font-size: 30px;
     }
 
     #plane {
-        left: 67%;
         max-width: 196px;
     }
+
     .totop {
-        right: 650px;
-        width: 100px;
+        right: 200px;
+        width: 125px;
     }
 }
 
@@ -901,7 +888,7 @@ input[type="radio"]{
     }
 
     #titlecontact{
-        font-size: 8em;
+        font-size: 7em;
     }
 
     .totop {
@@ -929,7 +916,7 @@ input[type="radio"]{
     }
 
     .totop{
-        right: 27%;
+        right: 11%;
         width: 180px;
         bottom: 50px;
     }
@@ -938,13 +925,29 @@ input[type="radio"]{
         width: 600px;
     }
 
-    
-
     #mypro{
         padding: 10% 0;
     }
 
+    #mypro p{
+        font-size: 3em;
+    }
+
+    #contact p {
+        font-size: 3em;
+    }
+
     .contacttitle{
         margin-top: 180px;
+    }
+
+    #titlecontact {
+        font-size: 9em;
+    }
+
+    #send{
+        min-width: 296px;
+        min-height: 130px;
+        font-size: 40px;
     }
 }

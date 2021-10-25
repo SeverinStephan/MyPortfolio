@@ -6,8 +6,7 @@ let lang = document.getElementById("lang")
 
 function showText() {
     if (kurz.checked) {
-        textContent.innerHTML = "<p> Ich mache super tolle Webseiten!</p>"
-
+        textContent.innerHTML = "<p> Ich mache super tolle Webseiten und habe auch noch Spaß dabei!</p>"
     }
     else if (mittel.checked) {
         textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
