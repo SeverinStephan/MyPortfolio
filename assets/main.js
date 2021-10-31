@@ -6,7 +6,7 @@ let lang = document.getElementById("lang")
 
 function showText() {
     if (kurz.checked) {
-        textContent.innerHTML = "<p> Ich mache super tolle Webseiten und habe auch noch Spaß dabei!</p>"
+        textContent.innerHTML = "<p> Ich mache super tolle Webseiten und habe auch noch Spaß</p>"
     }
     else if (mittel.checked) {
         textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
@@ -17,23 +17,28 @@ function showText() {
 
 // GALLERY
 
-const mainPic = document.getElementById("mainpic")
+let mainPic = document.getElementById("mainpic")
+
 
 
 function wald() {
     mainPic.innerHTML = "<img src=assets/img/Portrait4NEU.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.classList.add("appear")
 }
 
 function bus() {
     mainPic.innerHTML = "<img src=assets/img/ichBus.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.classList.add("appear")
 }
 
 function hund() {
     mainPic.innerHTML = "<img src=assets/img/IchPalmen.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.classList.add("appear")
 }
 
 function klein() {
     mainPic.innerHTML = "<img src=assets/img/Portrait12NEU.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.classList.add("appear")
 }
 
 // PROJECTS

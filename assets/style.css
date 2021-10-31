@@ -187,12 +187,21 @@ main{
     text-align: justify;
 }
 
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 100;}
+  }
+
 #chosenpic{
     width: 70%;
     display: block;
     margin: auto;
     margin-top: 5%;
     padding: 5%;
+}
+
+.appear{
+    animation: appear 2s linear;
 }
 
 .portrait h3{
@@ -210,6 +219,7 @@ main{
     display: flex;
     justify-content: center;
 }
+
 /* WHAT I KNOW */
 
 
@@ -353,7 +363,6 @@ textarea::placeholder{
     width: 130px;
     height: 60px;
     margin-top: 16px;
-    border-radius: 10px;
     transition: all 0.5s;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
@@ -568,6 +577,11 @@ input[type="radio"]{
 
     h1{
         font-size: 5em;
+    }
+
+    .gallery img{
+        cursor: pointer;
+        transition-duration: 2s;
     }
 
     .totop{
