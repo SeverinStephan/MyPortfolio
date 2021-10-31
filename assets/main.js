@@ -6,10 +6,10 @@ let lang = document.getElementById("lang")
 
 function showText() {
     if (kurz.checked) {
-        textContent.innerHTML = "<p> Ich mache super tolle Webseiten und habe auch noch Spaß</p>"
+        textContent.innerHTML = "<p> Ich mache super tolle Webseiten und habe auch noch Spaß dabei.</p>"
     }
     else if (mittel.checked) {
-        textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig. Ich bin eine waschechte Berlinerin, lebe in Prenzlauer Berg, liebe das Reisen und die Natur. </p>"
+        textContent.innerHTML = "<p> Ich habe eine Weiterbildung zur Web Entwicklerin gemacht und arbeite jetzt selbständig in Berlin Prenzlauer Berg. Am liebsten halte ich mich in der Natur auf und reise leidenschaftlich gerne. </p>"
     }
     else { textContent.innerHTML = "<p> Diese Magie die passiert wenn man all diese Zeichen und Nummer eingibt. Es sieht aus wie ein Chaos aber am Ende kommt eine wunderschöne Webseite dabei raus. 2018 bin ich zum ersten Mal in die Welt von HTML und CSS eingetaucht und habe stundenlang im Schlafanzug mit Tee und Cracker vor dem Laptop gesessen. Da wusste ich, das ist etwas womit ich meien Lebensunterhalt verdienen will. Ein Job der Spass macht. Toll! Also habe ich mitten im Lockdown eine Weiterbildung zur Web Entwicklerin gemacht und bin nun fertig. ich freue mich anderen zu helfen ihre Ideen in das World Wide Web zu laden! </p>" }
 }
@@ -137,13 +137,13 @@ let contactTitle = document.getElementById("titlecontact")
 let unterTitel = document.getElementById("untertitel")
 let aboutSeverin = document.getElementById("aboutseverin")
 let motivation = document.getElementById("motivation")
-let projekteText = document.getElementById("projektetext")
 let gelb1 = document.getElementById("gelb1")
 let gelb2 = document.getElementById("gelb2")
 let gelb3 = document.getElementById("gelb3")
 let gelb4 = document.getElementById("gelb4")
 let gelb5 = document.getElementById("gelb5")
 let gelb6 = document.getElementById("gelb6")
+let gelb7 = document.getElementById("gelb7")
 let isOn = true
 
 function darkMode() {
@@ -160,7 +160,6 @@ function darkMode() {
         unterTitel.style.color = "white"
         aboutSeverin.style.color = "#FFE742"
         motivation.style.color = "white"
-        projekteText.style.color = "white"
         sun.style.opacity = "0"
         moon.style.opacity = "1"
         moon.style.bottom = "69%"
@@ -172,6 +171,7 @@ function darkMode() {
         gelb4.style.color = "#FFE742"
         gelb5.style.color = "#FFE742"
         gelb6.style.color = "#FFE742"
+        gelb7.style.color = "#FFE742"
 
     } else {
         body.classList.remove("darkmode")
@@ -185,7 +185,6 @@ function darkMode() {
         unterTitel.style.color = ""
         aboutSeverin.style.color = ""
         motivation.style.color = ""
-        projekteText.style.color = ""
         sun.style.bottom = "40%"
         moon.style.bottom = "-5%"
         sun.style.opacity = "1"
@@ -197,6 +196,7 @@ function darkMode() {
         gelb4.style.color = ""
         gelb5.style.color = ""
         gelb6.style.color = ""
+        gelb7.style.color = ""
     }
 
 }

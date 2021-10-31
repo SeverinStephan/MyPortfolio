@@ -262,10 +262,6 @@ main{
     margin-top: 30px;
 }
 
-#projektetext{
-    color: #232420;
-}
-
 #mypro p{
     padding: 3%;
     text-align: center;
@@ -724,7 +720,7 @@ input[type="radio"]{
         font-size: 2.8em;
     }
 
-    #projektetext, #motivation, #abouttext
+    #motivation, #abouttext
     {
         font-size: 1.5em;
     }
@@ -753,6 +749,10 @@ input[type="radio"]{
 
     #propics img{
         width: 25%;
+    }
+
+    #gelb5{
+        font-size: 2em;
     }
 
     article{
