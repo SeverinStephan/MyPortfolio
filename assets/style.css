@@ -341,7 +341,7 @@ main{
 
 #contact{
     background-color: #FFE742;
-    padding-bottom: 200px;
+    padding-bottom: 70px;
     border-top: 3px solid pink;
 }
 
@@ -355,7 +355,7 @@ main{
 
 #contact p{
     padding: 4%;
-    text-align: justify;
+    text-align: center;
     color: #232420;
 }
 
@@ -420,8 +420,13 @@ main{
     margin: auto;
 }
 
+.heart{
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
 .madeby{
-    position:absolute ;
     bottom: 10px;
     left: 10px;
 }
