@@ -144,6 +144,8 @@ let gelb4 = document.getElementById("gelb4")
 let gelb5 = document.getElementById("gelb5")
 let gelb6 = document.getElementById("gelb6")
 let gelb7 = document.getElementById("gelb7")
+let gelb8 = document.getElementById("gelb8")
+let created = document.getElementById("created")
 let isOn = true
 
 function darkMode() {
@@ -172,6 +174,8 @@ function darkMode() {
         gelb5.style.color = "#FFE742"
         gelb6.style.color = "#FFE742"
         gelb7.style.color = "#FFE742"
+        gelb8.style.color = "#FFE742"
+        created.style.color = "white"
 
     } else {
         body.classList.remove("darkmode")
@@ -197,6 +201,8 @@ function darkMode() {
         gelb5.style.color = ""
         gelb6.style.color = ""
         gelb7.style.color = ""
+        gelb8.style.color = ""
+        created.style.color = ""
     }
 
 }

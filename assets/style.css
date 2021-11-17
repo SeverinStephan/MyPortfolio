@@ -33,6 +33,48 @@ html{
     transition: all 1s;
 }
 
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	min-width: 35px;
+	min-height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	min-width: 10px;
+	min-height: 10px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #506080;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	min-width: 40px;
+}
+
 .totop{
     position: absolute;
     position: fixed;
@@ -159,6 +201,7 @@ main{
 #aboutmesection{
     padding: 5%;
     margin-top: 25px;
+    margin-bottom: 35%;
 }
 
 .wannaknow
@@ -229,6 +272,10 @@ main{
 
 #whatiknow h1{
     margin: 9% 0;
+}
+
+#whatiknow li{
+    list-style: none;
 }
 
 .skills div h2{
@@ -320,39 +367,18 @@ main{
 }
 
  #contact form{
-     text-align: center;
-     width: 100%;
+     display: grid;
+     grid-template-rows: 35px 35px 150px;
+     padding: 5%;
  }
 
- #contact form textarea{
+ #contact form input{
     font-family: 'Lato', sans-serif;
- }
-
- #contact form textarea:first-of-type{
-     min-width: 90vw;
-     min-height: 5vh;
-     border-radius: 5px;
- }
-
- #contact form textarea:nth-last-of-type(2){
-    min-width: 90vw;
-    min-height: 5vh;
-    border-radius: 5px;
-}
-
-#contact form textarea:last-of-type{
-    min-width: 90vw;
-    height: 30vh;
-    border-radius: 5px;
-}
-
-textarea::placeholder{
     text-align: center;
-}
-
-#contact form textarea ::placeholder:last-of-type{
-    margin-top: 10%;
-}
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 1px solid black;
+ }
 
   #send{
     background-color: #FA314A;
@@ -362,10 +388,8 @@ textarea::placeholder{
     transition: all 0.5s;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
-  }
-
-  form input{
-      border: 1px solid #232420;
+    margin: 10px auto;
+    border: 1px solid black;
   }
 
   #send:hover{
@@ -393,7 +417,7 @@ textarea::placeholder{
   #plane{
     max-width: 145px;
     offset-path: path("M9, 9c0, 0, 171.7, 15.8, 171.7-161.9");
-    
+    margin: auto;
 }
 
 .madeby{
@@ -434,68 +458,16 @@ textarea::placeholder{
     position: fixed;
 }
 
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	min-width: 35px;
-	min-height: 20px;
-	background: grey;
-	display: block;
-	border-radius: 100px;
-	position: relative;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	min-width: 10px;
-	min-height: 10px;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
-}
-
-input:checked + label {
-	background: #506080;
-}
-
-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	min-width: 40px;
-}
-
-#contact form textarea:first-of-type {
-    text-align: center;
-    padding-top: 15px;
-}
-
-#contact form textarea:nth-last-of-type(2) {
-    text-align: center;
-    padding-top: 15px;
-}
-
-input[type="radio"]{
-    background-color: black;
-}
-
 .codepic{
     display: none;
 }
 
 .lastpic{
     display: none;
+}
+
+#heart{
+    width: 20px;
 }
 
 /* MEDIA QUERY */
@@ -555,15 +527,10 @@ input[type="radio"]{
         padding: 1% 17%;
     }
 
-    #contact form textarea:first-of-type{
-        min-width: 500px;
-    }
-
-    #contact form textarea:nth-last-of-type(2){
-        min-width: 500px;
-    }
-    #contact form textarea:last-of-type{
-        min-width: 500px;
+    #contact form{
+        padding: 0;
+        grid-template-columns: 500px;
+        justify-content: center;
     }
 
 }
@@ -725,6 +692,10 @@ input[type="radio"]{
         font-size: 1.5em;
     }
 
+    ul li {
+        padding: 2%;
+    }
+
     li{
         font-size: 1.5em;
     }
@@ -778,6 +749,10 @@ input[type="radio"]{
     .meglasses{
         width: 350px;
     }
+
+    #contact form{
+        grid-template-rows: 60px 60px 235px;
+    }
     
 }
 
@@ -828,22 +803,6 @@ input[type="radio"]{
         gap: 22rem;
         width: 110%;
         padding: 0px 11%;
-    }
-
-    #contact form textarea:first-of-type {
-        min-width: 70%;
-    }
-
-    #contact form textarea:nth-last-of-type(2) {
-        min-width: 70%;
-    }
-
-    #contact form textarea:last-of-type {
-        min-width: 70%;
-    }
-
-    textarea {
-        font-size: 1.5em;
     }
 
     #send {

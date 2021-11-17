@@ -162,18 +162,17 @@
 
         <div class="lastwrapper">
             <img class="meglasses" src="./assets/img/Portrait6NEU.png" alt="">
-            <form action="" method="POST">
-                <textarea type="text" placeholder="Name" onclick="this.value=' '"></textarea>
-                <textarea type="email" placeholder="Email" onclick="this.value=' '"></textarea> <br>
-                <textarea type="text" placeholder="Nachricht" onclick="this.value=' '"></textarea>
-                <br>
-                <div class="sendwrapper">
-                    <input type="button" name="send" id="send" value="Ab die Post" onclick="flyAway()">
-                </div>
+            <form action="https://formsubmit.co/severin.stephan@gmx.de" method="POST">
+                <input type="text" name="name" required value="Name">
+                <input type="email" name="email" required value="Email">
+                <input type="text" name="nachricht" required value="Nachricht">
+                <button id="send" onclick="flyAway()" type="submit">Ab die Post</button>
                 <img id="plane" src="./assets/img/paperplane.png" alt="">
             </form>
+
         </div>
-        <p class="madeby">Webside made by Severin Stephan</p>
+        <p id="created" class="madeby">Webside created with love by <b id="gelb8"> Severin Stephan</b> <img id="heart"
+                src="./assets/img/Herz.gif" alt=""></p>
     </section>
 
 
