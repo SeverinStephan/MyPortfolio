@@ -366,7 +366,7 @@ main{
     margin: 20px auto;
 }
 
- #contact form{
+ #contact .lastwrapper form{
      display: grid;
      grid-template-rows: 35px 35px 150px;
      padding: 5%;
