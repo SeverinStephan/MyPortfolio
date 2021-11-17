@@ -466,10 +466,6 @@ main{
     display: none;
 }
 
-#heart{
-    width: 5%;
-}
-
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px ){
