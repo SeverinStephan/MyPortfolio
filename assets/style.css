@@ -471,6 +471,24 @@ main{
     display: none;
 }
 
+/* Danke Nachricht gesendet*/
+
+#danke{
+    background-color: #FFE742;
+    height: 100vh;
+}
+
+#danketitle{
+    font-size: 48px;
+    text-align: left;
+    padding: 20% 0 0 5%;
+}
+
+#back{
+    padding: 53px 0 0 12px;
+}
+
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px ){
@@ -532,6 +550,10 @@ main{
         padding: 0;
         grid-template-columns: 500px;
         justify-content: center;
+    }
+
+    #back {
+        padding: 53px 0 0 41px;
     }
 
 }
@@ -619,6 +641,10 @@ main{
     .lastpic{
         display: block;
     }
+
+    #back {
+        padding: 53px 0 0 50px;
+    }
 }
 
 @media screen and (min-width:1068px ){
@@ -653,6 +679,10 @@ main{
 
     #mypro p{
         padding: 1% 7%;
+    }
+
+    #back {
+        padding: 53px 0 0 52px;
     }
 }
 
@@ -754,6 +784,16 @@ main{
     #contact form{
         grid-template-rows: 60px 60px 235px;
     }
+
+    #danketitle{
+        font-size: 72px;
+        width: 66%;
+        margin: auto;
+    }
+
+    #back {
+        margin-left: 19%;
+    }
     
 }
 
@@ -820,6 +860,10 @@ main{
         right: 200px;
         width: 125px;
     }
+
+    #back{
+        margin-left:4%;
+    }
 }
 
 @media screen and (min-width:2000px ){
@@ -867,6 +911,10 @@ main{
     .totop {
         right: 700px;
         width: 130px;
+    }
+
+    #back{
+        margin-left: 7%;
     }
 }
 
@@ -922,5 +970,9 @@ main{
         min-width: 296px;
         min-height: 130px;
         font-size: 40px;
+    }
+
+    #back {
+        margin-left: 10%;
     }
 }

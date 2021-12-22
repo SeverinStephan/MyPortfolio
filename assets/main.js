@@ -22,22 +22,22 @@ let mainPic = document.getElementById("mainpic")
 
 
 function wald() {
-    mainPic.innerHTML = "<img src=assets/img/Portrait4NEU.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.innerHTML = "<img src=assets/img/ichfoto1.png style= width:60%;display:block;margin:auto;margin-top:15%>"
     mainPic.classList.add("appear")
 }
 
 function bus() {
-    mainPic.innerHTML = "<img src=assets/img/ichBus.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.innerHTML = "<img src=assets/img/ichfoto2.png style= width:60%;display:block;margin:auto;margin-top:15%>"
     mainPic.classList.add("appear")
 }
 
 function hund() {
-    mainPic.innerHTML = "<img src=assets/img/IchPalmen.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.innerHTML = "<img src=assets/img/ichfoto3.png style= width:60%;display:block;margin:auto;margin-top:15%>"
     mainPic.classList.add("appear")
 }
 
 function klein() {
-    mainPic.innerHTML = "<img src=assets/img/Portrait12NEU.png style= width:60%;display:block;margin:auto;margin-top:15%>"
+    mainPic.innerHTML = "<img src=assets/img/ichfoto4.png style= width:60%;display:block;margin:auto;margin-top:15%>"
     mainPic.classList.add("appear")
 }
 
@@ -118,7 +118,7 @@ function flyAway() {
     setTimeout(() => {
         plane.classList.add("go")
         flyButton.style.background = "#7ED957"
-        flyButton.value = "Done"
+        flyButton.innerHTML = "Done"
     }, 500)
 }
 
